@@ -1,0 +1,39 @@
+html,body{
+    width:100%;
+    height: 100%;
+    font-size: 12px;
+    /*1rem=12px*/
+}
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#main {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    overflow: auto;
+}
+
+#tab {
+    width: 100%;
+    height: 7.5%;
+    background: lightblue;
+    border-top: 1px solid lightgray;
+    position: fixed;
+    bottom: 0;
+}
+
+#tab > ul {
+    width: 100%;
+    height: 100%;
+}
+
+#tab > ul > li {
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
