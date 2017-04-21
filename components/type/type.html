@@ -25,11 +25,21 @@
     <div class="type_headimg">
         <img src="http://s16.mogucdn.com/p2/160902/upload_0019l9a7geh10e34ca98153h3hakg_750x98.png_750x999.v1c7E.70.webp">
     </div>
-    <div class="type_contant">
-    <div class="type_contitle">
-        <h3></h3>
-        <a href="">查看更多>></a>
-    </div>
+    <div class="type_contant" ng-repeat="items in type_arr2">
+        <div class="type_contitle">
+            <h3></h3>
+            <a href=""><p>查看更多>></p></a>
+        </div>
+        <div class="type_contantmain">
+             <ul >
+                    <li ng-repeat="v in items.list">
+                        <a href=""><img src="{{v.image}}"></a>
+                    </li>
+
+                </ul>
+
+
+        </div>
 
 
 
