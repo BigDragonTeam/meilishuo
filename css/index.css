@@ -33,24 +33,33 @@ html,body{
     float: left;
     text-align: center;
     font-size: 0.25rem;
-    padding-top: .5rem;
+
 }
 #tab > ul > li>a{
+    padding-top: .5rem;
+    display: inline-block;
+    width:100%;
+    height: 100%;
     color: #999;
 }
-#tab > ul > li:first-child{
+#tab > ul >li:nth-child(1)>a{
     background:url(http://s16.mogucdn.com/p2/160802/upload_439ak5453ih43h5d2a109dhe71agg_36x39.png) no-repeat center 21%;
     background-size: auto 40%;
 }
-#tab > ul > li:nth-child(2){
+#tab > ul >li:nth-child(2)>a{
     background:url(http://s17.mogucdn.com/p2/160802/upload_3egkhdd8460el241d98kcl706ke65_34x34.png) no-repeat center 21%;
     background-size: auto 40%;
 }
-#tab > ul > li:nth-child(3){
+#tab > ul >li:nth-child(3)>a{
     background:url(http://s16.mogucdn.com/p2/160802/upload_0eabagglh39aggl8jihfakfbf70a9_40x38.png) no-repeat center 21%;
     background-size: auto 40%;
 }
-#tab > ul > li:nth-child(4){
+#tab > ul >li:nth-child(4)>a{
     background:url(http://s17.mogucdn.com/p2/160802/upload_5g85l55d280l94lfg678lcleegf5e_38x38.png) no-repeat center 21%;
     background-size: auto 40%;
+}
+#tab > ul >li>.getRed{
+    background:url(http://s18.mogucdn.com/p2/160802/upload_29e515a6k59k937a3ej3l5e6bfji2_36x39.png) no-repeat center 21% !important;
+    background-size: auto 40% !important;
+    color: #ff3366;
 }

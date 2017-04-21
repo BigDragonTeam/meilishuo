@@ -19,12 +19,20 @@
 <body>
 	<div id="wrap">
         <div id="main" ui-view></div>
-        <div id="tab">
+        <div id="tab" ng-controller="tabCtrl">
             <ul>
-                <li><a ui-sref="home" href="">首页</a></li>
-                <li><a ui-sref="type" href="">分类</a></li>
-                <li><a ui-sref="cart" href="">购物车</a></li>
-                <li><a ui-sref="mine" href="">我的</a></li>
+                <li>
+                    <a ui-sref="home" href="" ng-class="{true:'getRed',false:'getWhite'}[isClassName==true]" ng-click="changeColor()">首页</a>
+                </li>
+                <li>
+                    <a ui-sref="type" href="" ng-class="{true:'getRed',false:'getWhite'}[isClassName==true]" ng-click="changeColor()">分类</a>
+                </li>
+                <li>
+                    <a ui-sref="cart" href="" ng-class="{true:'getRed',false:'getWhite'}[isClassName==true]" ng-click="changeColor()">购物车</a>
+                </li>
+                <li>
+                    <a ui-sref="mine" href="" ng-class="{true:'getRed',false:'getWhite'}[isClassName==true]" ng-click="changeColor()">我的</a>
+                </li>
             </ul>
         </div>
     </div>
