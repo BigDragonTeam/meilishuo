@@ -1,12 +1,13 @@
 .type_all{
     height: 100%;
     width:100%;
-    background:#F4F4F4;
+    overflow: auto;
+
 }
 .type_head{
     height: 8%;
     width: 100%;
-    background: #ffffff;
+
 }
 .type_heada {
     float: left;
@@ -50,4 +51,39 @@
     width:100%;
     height:100%;
 
+}
+.type_total{
+    width:100%;
+    height:10.9rem;
+    padding:0.2rem 0;
+    background: #F4F4F4;
+
+}
+.type_totalcon{
+    padding:.3rem .2rem .2rem .2rem;
+    width:100%;
+    height:100%;
+    background: #ffffff;
+
+}
+.type_totalul{
+    width:100%;
+    height:100%;
+}
+.type_totalul li{
+    width:33.3%;
+    float: left;
+
+}
+.type_totalul li img{
+    width:100%;
+}
+.type_contant{
+    height: 6.25rem;
+    width:100%;
+
+}
+.type_contitle{
+    height:100%;
+    width:0.85rem;
 }
