@@ -1,6 +1,12 @@
+.type_all{
+    height: 100%;
+    width:100%;
+    background:#F4F4F4;
+}
 .type_head{
     height: 8%;
     width: 100%;
+    background: #ffffff;
 }
 .type_heada {
     float: left;
@@ -22,8 +28,8 @@
     color: #333;
     margin-top:0.16rem;
     margin-bottom: 0.16rem;
-    text-indent: 2.5rem;
-    background:#F4F4F4 url("http://d05.res.meilishuo.net/pic/_o/24/4c/cc06b0edaf361320340aa0bfe903_24_26.c1.png") no-repeat 1rem center;
+    text-indent: 0.5rem;
+    background:#F4F4F4 url("http://d05.res.meilishuo.net/pic/_o/24/4c/cc06b0edaf361320340aa0bfe903_24_26.c1.png") no-repeat 0.2rem center;
     background-size: auto 0.3rem;
     border: none;
 }
