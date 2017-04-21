@@ -7,8 +7,8 @@
     height: 0.9rem;
     width:0.58rem;
     background:url("http://s17.mogucdn.com/p1/160801/idid_ifqwinzwgy3dmyzrmezdambqgyyde_58x33.png") no-repeat center ;
-    margin:0.3rem;
     background-size: contain;
+    margin:0 0.3rem ;
 }
 
 
@@ -18,16 +18,18 @@
     float: left;
     outline: none;
     font-size:13px;
-
+    padding: 0.15rem 0.15rem 0.15rem 0.35rem;
     color: #333;
+    margin-top:0.16rem;
+    margin-bottom: 0.16rem;
     text-indent: 2.5rem;
     background:#F4F4F4 url("http://d05.res.meilishuo.net/pic/_o/24/4c/cc06b0edaf361320340aa0bfe903_24_26.c1.png") no-repeat 1rem center;
     background-size: auto 0.3rem;
     border: none;
 }
 .type_headicon{
-    width:0.9rem;
-    height:60%;
+    width:0.98rem;
+    height:0.56rem;
     margin-top: 2%;
     float: left;
     background:url("http://d02.res.meilishuo.net/pic/_o/75/2f/5539a21f7825b2fcd3a3cf98f70a_36_32.c1.png") no-repeat center;
