@@ -16,7 +16,7 @@ html,body{
 #tab {
     width: 100%;
     height: 7.5%;
-    background: lightblue;
+    background: white;
     border-top: 1px solid lightgray;
     position: fixed;
     bottom: 0;
