@@ -2,35 +2,36 @@
     height: 8%;
     width: 100%;
 }
-.type_head a {
+.type_heada {
     float: left;
-    height: 100%;
-    width:8%;
+    height: 0.9rem;
+    width:0.58rem;
     background:url("http://s17.mogucdn.com/p1/160801/idid_ifqwinzwgy3dmyzrmezdambqgyyde_58x33.png") no-repeat center ;
-    margin:0 1.3rem;
+    margin:0.3rem;
     background-size: contain;
 }
 
 
 .type_head input{
     height:60%;
-    width:24rem;
+    width:71%;
     float: left;
     outline: none;
     font-size:13px;
-    margin:0.8rem 0;
+
     color: #333;
     text-indent: 2.5rem;
     background:#F4F4F4 url("http://d05.res.meilishuo.net/pic/_o/24/4c/cc06b0edaf361320340aa0bfe903_24_26.c1.png") no-repeat 1rem center;
-    background-size: auto 1.5rem;
+    background-size: auto 0.3rem;
+    border: none;
 }
 .type_headicon{
-    width:4.5rem;
+    width:0.9rem;
     height:60%;
     margin-top: 2%;
     float: left;
     background:url("http://d02.res.meilishuo.net/pic/_o/75/2f/5539a21f7825b2fcd3a3cf98f70a_36_32.c1.png") no-repeat center;
-   background-size: 1.7rem 1.5rem;
+   background-size: 0.34rem 0.3rem;
 }
 .type_headimg{
     height:9%;
@@ -38,5 +39,5 @@
 
 }
 .type_headimg img{
-    height: 100%;
+    width:100%;
 }
