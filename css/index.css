@@ -1,8 +1,6 @@
 html,body{
     width:100%;
     height: 100%;
-    font-size: 12px;
-    /*1rem=12px*/
 }
 #wrap {
     width: 100%;
@@ -36,4 +34,5 @@ html,body{
     height: 100%;
     float: left;
     text-align: center;
+    font-size: 0.25rem;
 }
