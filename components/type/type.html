@@ -1,10 +1,51 @@
 <!--type头部信息-->
-<div class="type_head">
-    <a></a>
-    <input type="text" placeholder="卫衣">
-    <div class="type_headicon"></div>
+<div class="type_all">
+    <div class="type_head">
+        <a href="#" class="type_heada"></a>
+        <input type="text" placeholder="卫衣">
+        <a href="#" class="type_headicon"></a>
+
+    </div>
+    <div class="type_headimg">
+        <img src="http://s16.mogucdn.com/p2/160902/upload_8f08e2a43gch3k70d9abfcbdd7bcg_750x98.png_999x999.v1c0.webp">
+    </div>
+    <!--主要的分类-->
+    <div class="type_total">
+        <div class="type_totalcon">
+            <ul class="type_totalul">
+                <li ng-repeat="item in type_arr1">
+                    <a href=""><img src="{{item.image}}"></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <!--下面具体的目录-->
+    <div class="type_headimg">
+        <img src="http://s16.mogucdn.com/p2/160902/upload_0019l9a7geh10e34ca98153h3hakg_750x98.png_750x999.v1c7E.70.webp">
+    </div>
+    <div class="type_contant" ng-repeat="items in type_arr2">
+        <div class="type_contitle">
+            <h3></h3>
+            <a href=""><p>查看更多>></p></a>
+        </div>
+        <div class="type_contantmain">
+             <ul >
+                    <li ng-repeat="v in items.list">
+                        <a href=""><img src="{{v.image}}"></a>
+                    </li>
+
+                </ul>
+
+
+        </div>
+
+
+
+    </div>
 
 </div>
-<div class="type_headimg">
-    <img src="http://s16.mogucdn.com/p2/160902/upload_8f08e2a43gch3k70d9abfcbdd7bcg_750x98.png_999x999.v1c0.webp">
-</div>
+
+
+

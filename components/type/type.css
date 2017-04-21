@@ -1,36 +1,46 @@
+.type_all{
+    height: 100%;
+    width:100%;
+    overflow: auto;
+
+}
 .type_head{
     height: 8%;
     width: 100%;
+
 }
-.type_head a {
+.type_heada {
     float: left;
-    height: 100%;
-    width:8%;
+    height: 0.9rem;
+    width:0.58rem;
     background:url("http://s17.mogucdn.com/p1/160801/idid_ifqwinzwgy3dmyzrmezdambqgyyde_58x33.png") no-repeat center ;
-    margin:0 1.3rem;
     background-size: contain;
+    margin:0 0.3rem ;
 }
 
 
 .type_head input{
     height:60%;
-    width:24rem;
+    width:71%;
     float: left;
     outline: none;
     font-size:13px;
-    margin:0.8rem 0;
+    padding: 0.15rem 0.15rem 0.15rem 0.35rem;
     color: #333;
-    text-indent: 2.5rem;
-    background:#F4F4F4 url("http://d05.res.meilishuo.net/pic/_o/24/4c/cc06b0edaf361320340aa0bfe903_24_26.c1.png") no-repeat 1rem center;
-    background-size: auto 1.5rem;
+    margin-top:0.16rem;
+    margin-bottom: 0.16rem;
+    text-indent: 0.5rem;
+    background:#F4F4F4 url("http://d05.res.meilishuo.net/pic/_o/24/4c/cc06b0edaf361320340aa0bfe903_24_26.c1.png") no-repeat 0.2rem center;
+    background-size: auto 0.3rem;
+    border: none;
 }
 .type_headicon{
-    width:4.5rem;
-    height:60%;
+    width:0.98rem;
+    height:0.56rem;
     margin-top: 2%;
     float: left;
     background:url("http://d02.res.meilishuo.net/pic/_o/75/2f/5539a21f7825b2fcd3a3cf98f70a_36_32.c1.png") no-repeat center;
-   background-size: 1.7rem 1.5rem;
+   background-size: 0.34rem 0.3rem;
 }
 .type_headimg{
     height:9%;
@@ -38,5 +48,73 @@
 
 }
 .type_headimg img{
-    height: 100%;
+    width:100%;
+    height:100%;
+
 }
+.type_total{
+    width:100%;
+    height:10.9rem;
+    padding:0.2rem 0;
+    background: #F4F4F4;
+
+}
+.type_totalcon{
+    padding:.3rem .2rem .2rem .2rem;
+    width:100%;
+    height:100%;
+    background: #ffffff;
+
+}
+.type_totalul{
+    width:100%;
+    height:100%;
+}
+.type_totalul li{
+    width:33.3%;
+    float: left;
+
+}
+.type_totalul li img{
+    width:100%;
+}
+.type_contant{
+    height: 6.25rem;
+    width:100%;
+
+}
+.type_contitle{
+    width:100%;
+    height:13.6%;
+}
+.type_contitle a{
+    float: right;
+    font-size: 0.26rem;
+    color: #FF3366;
+    padding: 0.25rem;
+}
+.type_contantmain{
+    height:86.4%;
+    width:100%;
+}
+.type_contantmain ul{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.type_contantmain ul li{
+    width:30%;
+    height:50%;
+    float: left;
+    border: 1px solid #F4F4F4;
+ }
+.type_contantmain ul li img{
+    height:100%;
+}
+.type_contantmain ul li:first-child{
+    height:100%;
+    width:40%;
+    float: left;
+
+}
+
