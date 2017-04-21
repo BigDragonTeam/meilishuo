@@ -1,0 +1,199 @@
+.clearfix:after{
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+#home{
+	    background-color: #f1f1f1;
+	    height:92.5%;
+	    overflow:auto;
+}
+#home header{
+	background:white;
+}
+#home .home_btn{
+	float:left;
+	width:.58rem;
+	height:.9rem;
+	margin:0 .3rem;
+	background:url('http://s17.mogucdn.com/p1/160801/idid_ifqwinzwgy3dmyzrmezdambqgyyde_58x33.png') no-repeat center;
+	background-size:contain;
+}
+#home .head_search{
+	float:left;
+	width:5.3rem;
+	padding:.15rem .15rem .15rem .55rem;
+	height:.56rem;
+	border-radius:.1rem;
+	color:#333;
+	border:none;
+	
+	outline:0;
+	margin-bottom: 0.16rem;
+    margin-top: 0.16rem;
+    background:#F4F4F4 url("http://d05.res.meilishuo.net/pic/_o/24/4c/cc06b0edaf361320340aa0bfe903_24_26.c1.png") no-repeat 0.2rem center;
+	background-size:auto .26rem;
+}
+.head_right_info{
+	float:left;
+	width:.98rem;
+	height:.56rem;
+	margin-top: 0.15rem;
+	background:url(http://d02.res.meilishuo.net/pic/_o/75/2f/5539a21f7825b2fcd3a3cf98f70a_36_32.c1.png) no-repeat center center;
+	background-size: .34rem .3rem;
+}
+#home .home_list li{
+	display:inline-block;
+	min-height:1.4rem;
+	width:1.4rem;
+	margin-right:.2rem;
+	
+}
+#home .home_list li img{
+	width:100%;
+}
+#home .home_box_wrap{
+	overflow:auto;
+	-webkit-overflow-scrolling: touch;
+	padding:0 .2rem;
+	padding-bottom:.2rem;
+	background:white;
+}
+#home .home_box_wrap ul{
+	overflow:hidden;
+	overflow-x:scroll;
+	
+	white-space:nowrap;
+	
+	
+}
+#home .home_box_wrap ul:before{
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+	-webkit-user-drag: none;
+}
+.niuzaiku_item_box{
+	background:white;
+	padding-bottom:.18rem;
+	margin-bottom:.2rem;
+	
+}
+.niuzaiku_item_detail{
+	padding:0 .2rem;
+	overflow:hidden;
+	overflow-x: scroll;
+	white-space: nowrap;	
+}
+
+.niuzaiku_item_detail>a{
+	display:inline-block;
+	width:2rem;
+	
+	margin-right:.18rem;
+	font-size:.24rem;
+}
+#home figure{
+	height:2rem;
+	overflow:hidden;
+	
+}
+#home .niuzai_big{
+	position:relative;
+}
+.f_title{
+	position:absolute;
+	bottom:.72rem;
+	font-size:.36rem;
+	color:white;
+	width:100%;
+	text-align:center;
+}
+.small_tit{
+	position:absolute;
+	bottom:.28rem;
+	font-size:.24rem;
+	color:white;
+	width:100%;
+	text-align: center;
+}
+.goods_item_price{
+	color:#f14b6c;
+}
+.goods_item_title{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height:.56rem;
+	line-height:.56rem;
+	
+}
+.niuzaiku_item_detail>a img{
+	width:100%;
+}
+.home_module_tab{
+	font-size:.28rem;
+	background:#ffffff;
+	height:.8rem;
+	line-height:.8rem;
+	
+}
+.home_module_tab a{
+	
+	width:32%;
+	text-align:center;
+	display:inline-block;
+}
+/*牛仔结束*/
+.home_module_row{
+	background: #fff;
+}
+#home .module_item{
+	width:50%;
+	display:inline-block;
+	font-size:.24rem;
+	padding:0 .08rem 0 .08rem;
+}
+#home .img_wrap{
+	position:relative;
+}
+.top_img_tags{
+	position:absolute;
+	top:0;
+}
+.img_tags{
+	position:absolute;
+	bottom:0;
+}
+.top_img_tags>img{
+	width:.9rem;
+	margin-left:.1rem;
+}
+.img_tags>img{
+	width:.7rem;
+	margin-left:.1rem;
+}
+#home .module_item .big_img_show{
+	width:100%;
+}
+.home_module_tit{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#home .price_infos{
+	text-align:center;
+}
+#home .price_info{
+	color:#ff337d;
+	margin-right:.2rem;
+}
+#home .fav_num{
+	color:#99999f;
+}
+.no_collect_icon{
+	background: url(img/colection.jpg);
+	width:.2rem;
+	display:inline-block;
+	height:.2rem;
+}

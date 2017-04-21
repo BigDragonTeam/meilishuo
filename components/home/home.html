@@ -1,3 +1,101 @@
-<p>homeyangpiaadkjahdadadadad</p>
-<h3>fskhfsfksghlshfsflsfsh</h3>
-<h5>sdsfsfsfhks</h5>
+<div id="home">
+	<header class="clearfix">
+		<form action="" method="post">
+			<a href="" class="home_btn"></a>
+			<input type="text" class="head_search" placeholder="卫衣" date-value="卫衣"/>
+			<div class='head_right_info'>
+				
+			</div>
+		</form>
+	</header>
+	<div class="slide_banner">
+		<a href="" ng-url="{{homeBanner.link}}">
+			<img src="{{homeBanner.image}}" alt="" width="100%"/>
+		</a>
+	</div>
+	<div class="home_box_wrap">
+		<ul class="home_list">
+			<li ng-repeat="item in boxSlide"><a ng-href="item.link" data-title="{{item.title}}"><img ng-src="{{item.image}}" alt="" /></a></li>
+		</ul>
+	</div>
+	<div class="Home_niuzaik">
+		<div class="niuzaiku_wrap" ng-repeat="item in niuzaiku">
+			<div class="niuzaiku_item_box">
+				<a ng-href="{{item.originUrl}}" title="{{item.title}}" class="niuzai_big"><img ng-src="{{item.image}}" alt="" width="100%"/>
+					<p class="f_title">{{item.title}}</p>
+					<p class="small_tit">{{item.subtitle}}</p>
+				</a>
+				
+				<div class="niuzaiku_item_detail">
+					<a href="" ng-repeat="item1 in item.goodsList">
+						<figure><img ng-src="{{item1.image}}" alt="" class="goods_item_img" width="100%"/>
+						
+						</figure>
+						<figcaption>
+							<p class='goods_item_title'>{{item1.title}}</p>
+							<p class="goods_item_price">￥{{item1.price}}</p>
+						</figcaption>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--牛仔库end-->
+	<div class="home_module_tab">
+		<div class="home_module_nav">
+			<a href="">默认</a>
+			<a href="">新品</a>
+			<a href="">精选</a>
+		</div>
+	</div>
+	<div class="home_module_row">
+		<div class="module_item" ng-repeat="item in morenProducts">
+			<div class="img_wrap">
+				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
+					<img src="{{ttags.img}}" alt="" />
+				</div>
+				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
+					<img ng-src="{{tags}}" alt="" class="img_tag" />
+				</div>
+				
+				<img ng-src="{{item.show.img}}" alt="" class="big_img_show"/>
+			</div>
+			<p class="home_module_tit">{{item.title}}</p>
+			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav
+}}</span></div>
+		</div>
+	</div>
+	<div class="home_module_row">
+		<div class="module_item" ng-repeat="item in morenProducts2">
+			<div class="img_wrap">
+				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
+					<img src="{{ttags.img}}" alt="" />
+				</div>
+				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
+					<img ng-src="{{tags}}" alt="" class="img_tag" />
+				</div>
+				
+				<img ng-src="{{item.show.img}}" alt="" class="big_img_show"/>
+			</div>
+			<p class="home_module_tit">{{item.title}}</p>
+			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav
+}}</span></div>
+		</div>
+	</div>
+	<div class="home_module_row">
+		<div class="module_item" ng-repeat="item in morenProducts3">
+			<div class="img_wrap">
+				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
+					<img src="{{ttags.img}}" alt="" />
+				</div>
+				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
+					<img ng-src="{{tags}}" alt="" class="img_tag" />
+				</div>
+				
+				<img ng-src="{{item.show.img}}" alt="" class="big_img_show"/>
+			</div>
+			<p class="home_module_tit">{{item.title}}</p>
+			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav}}</span></div>
+		</div>
+	</div>
+</div>
