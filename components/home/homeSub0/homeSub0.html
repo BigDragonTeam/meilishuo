@@ -1,3 +1,68 @@
-
-<div>homefjlkfjsfjsflsfl</div>
-
+<div id="HomeSub_youxuan">
+	<div class="top_banner">	
+		<img src="https://s10.mogucdn.com/mlcdn/c45406/170420_41cd5dc6b68jki1dhjbgad81fecbj_750x655.jpg_750x999.v1c7E.70.webp" alt="" />
+	</div>
+	<div class="j_nav">
+		<a href=''>潮流速递</a>
+		<a href=''>第四期新品</a>
+		<a href=''>T恤</a>
+		<a href=''>衬衫</a>
+		<a href=''>连衣裙</a>
+		<a href=''>半身裙</a>  
+		<a href=''>裤装</a>
+		<a href=''>更多</a>
+		
+	</div>
+	<div class="bg_imgBox">
+		<img src="https://s10.mogucdn.com/mlcdn/c45406/170420_6k0c0hbll62d49507037chih3fb0c_750x861.jpg_750x999.v1c7E.70.webp" alt="" />
+	</div>
+	<div class="bg_imgBox1">
+		<img src="https://s10.mogucdn.com/mlcdn/c45406/170420_0h798100ek22d1d747g646gdl57cl_750x789.jpg_750x999.v1c7E.70.webp" alt="" />
+	</div>
+	<div>
+		<img src="https://s10.mogucdn.com/mlcdn/c45406/170420_7jik7205l1a7hkakh244l424aj046_750x101.jpg_750x999.v1c7E.70.webp" alt="" />
+	</div>
+	<div class="module_time">
+		<div class="time_text">
+			距本期结束还剩：
+			<span>02</span>
+			天
+			<span></span>
+			时
+			<span></span>
+			分
+			<span></span>
+			秒
+		</div>
+		<img src="https://s10.mogucdn.com/mlcdn/c45406/170418_88c80cb02961deik8j64a14c48ag7_750x66.png_750x999.v1c7E.70.webp" alt="" />
+	</div>
+	<div class="single_goods">
+		<div class="item_single" ng-repeat="item in singelGoods.list">
+			<a ng-href="{{item.item_url}}">
+				<div class="single_imgbox">
+					<img ng-src="{{item.image}}" alt="" />
+				</div>
+				<div class="sub_price_all">
+					<span class="leftIcon">新品价</span>
+					<em class="item_price">￥{{item.price}}</em>
+				</div>
+				<h5 class="jp_tit">{{item.title}}</h5>
+			</a>
+		</div>
+	</div>
+	<div class="single_goods2">
+		<div class="item_single" ng-repeat="item in singelGoods2.list">
+			<a ng-href="{{item.item_url}}">
+				<div class="single_imgbox">
+					<img ng-src="{{item.image}}" alt="" />
+					<div class="sale_item">已售{{item.itemSale}}</div>
+				</div>
+				<div class="sub_price_all">
+					<span class="leftIcon">新品价</span>
+					<em class="item_price">￥{{item.price}}</em>
+				</div>
+				<h5 class="jp_tit">{{item.title}}</h5>
+			</a>
+		</div>
+	</div>
+</div>

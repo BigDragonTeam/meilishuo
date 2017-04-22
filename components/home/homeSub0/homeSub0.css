@@ -1,0 +1,82 @@
+.j_nav a{
+	display:inline-block;
+	width:24%;
+}
+#HomeSub_youxuan{
+	font-size:.24rem;
+}
+#HomeSub_youxuan img{
+	display:block;
+	width:100%;
+}
+#HomeSub_youxuan .top_banner img{
+	width:100%;
+}
+.j_nav{
+	background:#adf1ff;
+}
+.j_nav a{
+	height:.8rem;
+	line-height:.8rem;
+	text-align:center;
+}
+.single_imgbox{
+	margin-bottom:.12rem;
+	position:relative;
+}
+.leftIcon{
+	background:#ff3377;
+	color:#fff;
+	border-radius: .09rem;
+	padding:0 .08rem;
+}
+.module_time {
+	color:#fb6e45;
+	text-align:center;
+	background:#fff;
+}
+.single_goods{
+	padding:0 .08rem;
+	background:#fff;
+	margin-bottom:.2rem;
+}
+.item_single{
+	width:50%;
+	padding:0 .18rem .4rem .18rem;
+	display:inline-block;
+	
+	
+}
+.item_single a{
+	color:#555555;
+}
+.jp_tit{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	height:.52rem;
+	line-height: .52rem;
+	
+}
+.sub_price_all{
+	height:.46rem;
+	line-height: .46rem;
+}
+.item_price{
+	font-weight: 800;
+}
+.single_goods2{
+	padding-top:.28rem;
+	background: #fff;
+}
+.sale_item{
+	background:rgba(0,0,0,0.5);
+	width:1.3rem;
+	height:.4rem;
+	line-height:.4rem;
+	text-align:center;
+	color:#fff;
+	position:absolute;
+	right:0;
+	bottom:.2rem;
+}
