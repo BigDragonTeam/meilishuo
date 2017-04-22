@@ -37,5 +37,22 @@
                 </ul>
             </div>
         </div>
+        <div id="mine_orderTab">
+            <ul>
+                <li ng-class="{true:'getRed1',false:'getWhite'}[isClassName1]" ng-click="changeColor1()">
+                    <p>全部订单</p>
+                </li>
+                <li ng-class="{true:'getRed2',false:'getWhite'}[isClassName2]" ng-click="changeColor2()">
+                    <p>待付款</p>
+                </li>
+                <li ng-class="{true:'getRed3',false:'getWhite'}[isClassName3]" ng-click="changeColor3()">
+                    <p>待收货</p>
+                </li>
+                <li ng-class="{true:'getRed4',false:'getWhite'}[isClassName4]" ng-click="changeColor4()">
+                    <p>待评价</p>
+                </li>
+            </ul>
+        </div>
+        <div id="mine_orderList" ui-view></div>
     </div>
 </div>

@@ -93,19 +93,76 @@
     display: inline-block;
     width: 60%;
     height: 30%;
-    background-size:contain;
-    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat -4.5% 35%;
+
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat -29.5% 32%;
+    background-size:2.7rem;
 }
 #mine_collect_icon2{
+    display: inline-block;
+    width: 60%;
     height: 30%;
-    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat center 66.3%;
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat -29.5% 66%;
+    background-size:2.7rem;
 }
 
+#mine_orderTab{
+    margin-top: .2rem;
+    width:100%;
+    height: 11.5%;
+    padding:.25rem 0;
 
+    background: white;
+}
+#mine_orderTab>ul{
+    width:100%;
+    height: 100%;
+}
+#mine_orderTab>ul>li{
+    float: left;
+    width:25%;
+    height: 100%;
+    font-size: .28rem;
+    text-align: center;
+    padding-top: 7%;
+}
 
+#mine_orderTab>ul>li:nth-child(1){
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat -43% 110%;
+    background-size: 3.8rem;
+}
+#mine_orderTab>ul>li:nth-child(2){
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat 17.9% 110%;
+    background-size: 3.8rem;
+}
+#mine_orderTab>ul>li:nth-child(3){
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat 78.5% 110%;
+    background-size: 3.8rem;
+}
+#mine_orderTab>ul>li:nth-child(4){
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat 79% 110%;
+    background-size: 3.8rem;
+}
 
-
-
+#mine_orderTab>ul>.getRed1{
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat -42% 90% !important;
+    background-size: 3.8rem !important;
+    color: #ff7a9a !important;
+}
+#mine_orderTab>ul>.getRed2{
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat 17.2% 90% !important;
+    background-size: 3.8rem !important;
+    color: #ff7a9a !important;
+}
+#mine_orderTab>ul>.getRed3{
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat 76.1% 90% !important;
+    background-size: 3.8rem !important;
+    color: #ff7a9a !important;
+}
+#mine_orderTab>ul>.getRed4{
+    background: url(http://d03.res.meilishuo.net/pic/_o/c6/fc/9b0ba6f3238a9af4b4b576ebe6d6_580_678.cf.png) no-repeat 136.1% 90% !important;
+    background-size: 3.8rem !important;
+    color: #ff7a9a !important;
+}
 
 
 
