@@ -149,22 +149,41 @@
         },
         "898989":{
         	"list":[
-        		{
-        			"img":"https://s2.mogucdn.com/mlcdn/c45406/170420_84jb793h4664ei6ekg4i5e2dd9a43_225x225.png_160x160.v1cAC.70.webp",
-        			"name":"优选速递"
-        		},
-        		{
-        			"img":"https://s2.mogucdn.com/mlcdn/c45406/170412_57fda1ebl7jc2f621c9clhl2l9c1g_225x225.png_160x160.v1cAC.70.webp",
-        			"name":"今日上新"
-        		},
-        		{
-        			"img":"https://s2.mogucdn.com/mlcdn/c45406/170420_4ea4j6e0fbd7ifbi1f14lj7dke730_225x225.png_160x160.v1cAC.70.webp",
-        			"name":"热销单品"
-        		},
-        		{
-        			"img":"https://s2.mogucdn.com/mlcdn/c45406/170420_546j13c891lc706f3lda52al3ck9l_225x225.png_160x160.v1cAC.70.webp",
-        			"name":"省心套装"
-        		}
+        		  {
+                    "title": "优选速递",
+                    "sort": 1,
+                    "acm": "3.mce.2_10_1b60y.13730.0.ph9EpqhurJjVD.m_260485",
+                    "link": "http://act.meilishuo.com/yxsd4?acm=3.mce.2_10_1b60y.13730.0.ph9EpqhurJjVD.m_260485",
+                    "image": "https://s2.mogucdn.com/mlcdn/c45406/170420_84jb793h4664ei6ekg4i5e2dd9a43_225x225.png"
+                },
+                {
+                    "title": "今日上新",
+                    "sort": 2,
+                    "acm": "3.mce.2_10_1b614.13730.0.ph9EpqhurJjVE.m_260488",
+                    "link": "http://act.meilishuo.com/new2?acm=3.mce.2_10_1b614.13730.0.ph9EpqhurJjVE.m_260488",
+                    "image": "https://s2.mogucdn.com/mlcdn/c45406/170412_57fda1ebl7jc2f621c9clhl2l9c1g_225x225.png"
+                },
+                {
+                    "title": "热销单品",
+                    "sort": 3,
+                    "acm": "3.mce.2_10_1b610.13730.0.ph9EpqhurJjVF.m_260486",
+                    "link": "http://act.meilishuo.com/rexiao2?acm=3.mce.2_10_1b610.13730.0.ph9EpqhurJjVF.m_260486",
+                    "image": "https://s2.mogucdn.com/mlcdn/c45406/170420_4ea4j6e0fbd7ifbi1f14lj7dke730_225x225.png"
+                },
+                {
+                    "title": "省心套装",
+                    "sort": 4,
+                    "acm": "3.mce.2_10_1b612.13730.0.ph9EpqhurJjWG.m_260487",
+                    "link": "http://m.meilishuo.com/dapei/index?acm=3.mce.2_10_1b612.13730.0.ph9EpqhurJjWG.m_260487",
+                    "image": "https://s2.mogucdn.com/mlcdn/c45406/170420_546j13c891lc706f3lda52al3ck9l_225x225.png"
+                },
+                {
+                    "title": "一折秒杀",
+                    "sort": 4,
+                    "acm": "3.mce.2_10_1bqqi.13730.0.ph9EpqhurJjWH.m_273905",
+                    "link": "http://act.meilishuo.com/czyzm?acm=3.mce.2_10_1bqqi.13730.0.ph9EpqhurJjWH.m_273905",
+                    "image": "https://s2.mogucdn.com/mlcdn/c45406/170405_4180684kj5l84e0d6l60fff8f4i16_225x225.png"
+                }
         	]
         },
         "9999":{

@@ -12,7 +12,7 @@ angular.module('homeModule',[])
     	$http.get('json/home/1.json').success(function(res){
     		
     		$scope.homeBanner= res.data['5956'].list[0];
-    		$scope.boxSlide = res.data['13730'].list;
+    		$scope.boxSlide = res.data['898989'].list;
     		
     	});
     	$http.get('json/home/niuzaiku.json').success(function(res){

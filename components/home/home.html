@@ -1,4 +1,4 @@
-<div id="home">
+<div id="home" ui-view>
 	<header class="clearfix">
 		<form action="" method="post">
 			<a href="" class="home_btn"></a>
@@ -15,7 +15,7 @@
 	</div>
 	<div class="home_box_wrap">
 		<ul class="home_list">
-			<li ng-repeat="item in boxSlide"><a ng-href="item.link" data-title="{{item.title}}"><img ng-src="{{item.image}}" alt="" /></a></li>
+			<li ng-repeat="(i,item) in boxSlide"><a ng-href="item.link" data-title="{{item.title}}" ui-sref=".homeSub{{i}}"><img ng-src="{{item.image}}" alt="" /><p class="home_sub_title">{{item.title}}</p></a></li>
 		</ul>
 	</div>
 	<div class="Home_niuzaik">
