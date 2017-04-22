@@ -58,8 +58,23 @@ html,body{
     background:url(http://s17.mogucdn.com/p2/160802/upload_5g85l55d280l94lfg678lcleegf5e_38x38.png) no-repeat center 21%;
     background-size: auto 40%;
 }
-#tab > ul >li>.getRed{
+#tab > ul >li>.getRed1{
     background:url(http://s18.mogucdn.com/p2/160802/upload_29e515a6k59k937a3ej3l5e6bfji2_36x39.png) no-repeat center 21% !important;
+    background-size: auto 40% !important;
+    color: #ff3366;
+}
+#tab > ul >li>.getRed2{
+    background:url(http://s16.mogucdn.com/p2/160802/upload_488lbkj7ll3e92bg3ld1kh5k73l87_34x34.png) no-repeat center 21% !important;
+    background-size: auto 40% !important;
+    color: #ff3366;
+}
+#tab > ul >li>.getRed3{
+    background:url(http://s17.mogucdn.com/p2/160802/upload_565i382k0hi45ek6chhj5603d41a8_40x38.png) no-repeat center 21% !important;
+    background-size: auto 40% !important;
+    color: #ff3366;
+}
+#tab > ul >li>.getRed4{
+    background:url(http://s17.mogucdn.com/p1/160811/idid_ifqtkztcgjstazrumezdambqgyyde_38x38.png) no-repeat center 21% !important;
     background-size: auto 40% !important;
     color: #ff3366;
 }
