@@ -3,21 +3,32 @@ angular.module('mls',["ui.router",'angularCSS','homeModule','typeModule','cartMo
         $urlRouterProvider.otherwise('/home');
     })
     .controller("tabCtrl",["$scope",function($scope){
-        $scope.changeColor=function () {
 
-                $scope.isClassName=!$scope.isClassName;
-                alert(123123);
-
-            // if(btnName=="type"){
-            //     $scope.btnName=true
-            // }
-            // if(btnName=="cart"){
-            //     $scope.btnName=true
-            // }
-            // if(btnName=="mine"){
-            //     $scope.btnName=true
-            // }
-        }
+        $scope.changeColor1=function () {
+            $scope.isClassName1=true;
+            $scope.isClassName2=false;
+            $scope.isClassName3=false;
+            $scope.isClassName4=false;
+        };
+        $scope.changeColor2=function () {
+            $scope.isClassName1=false;
+            $scope.isClassName2=true;
+            $scope.isClassName3=false;
+            $scope.isClassName4=false;
+        };
+        $scope.changeColor3=function () {
+            $scope.isClassName1=false;
+            $scope.isClassName2=false;
+            $scope.isClassName3=true;
+            $scope.isClassName4=false;
+        };
+        $scope.changeColor4=function () {
+            $scope.isClassName1=false;
+            $scope.isClassName2=false;
+            $scope.isClassName3=false;
+            $scope.isClassName4=true;
+        };
+        $scope.changeColor1();
     }]);
 
 
