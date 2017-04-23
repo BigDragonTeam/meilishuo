@@ -9,7 +9,13 @@ angular.module('homeSub4Module',[])
         })
 })
 .controller('homeSub4Ctrl',['$scope','$http',function($scope,$http){
+	$scope.isAct = false;
+	$scope.changebot = function(){
+		$scope.isAct = !false;
+	}
 	$http.get('json/home/homeSub/homeSub4.json').success(function(res){
 		console.log(res);
+		$scope.firstSale = res.data['45622'];
+		
 	})
 }])

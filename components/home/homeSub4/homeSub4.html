@@ -2,4 +2,31 @@
 	<div>
 		<img src="https://s10.mogucdn.com/mlcdn/c45406/170419_181a5b11dibd6l27bkb2321gd0g3a_750x199.jpg_750x999.v1c7E.70.webp" alt="" />
 	</div>
+	<div class="module_row">
+		<div class="sub_nav" ng-init="">
+			<a href="" class="first_a" ng-class="{ture:'sub_a_act',false:'sub_a_no'}[isAct]" ng-click="changebot()">23日12点</a>
+			<a href="" class="second_a" ng-class="">23日20点</a>
+		</div>
+		<div class="wall_wrap_bg">
+			<div class="wall_wrap">
+				<a href="" ng-repeat="item in firstSale.list" class="clearfix sub_item_box"> 
+					<div class="poster_img">
+						<img src="{{item.image}}" alt="" />
+					</div>
+					<div class="sub_goods_info">
+						<p class="goods_title">{{item.title}}</p>
+						<div class="price_box">
+							<span class="gray_title">限时价</span>
+							<span class="act_price">￥{{item.discountPrice}}</span>
+							<span class="grey_price">原价<del>{{item.price}}</del></span>
+						</div>
+						<div class="bot_box">
+							<span class="shenyu">仅剩{{item.itemInventory-item.itemSale}}件</span>
+							<span class="buy_now">准点开抢</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
 </div>

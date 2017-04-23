@@ -1,4 +1,4 @@
-angular.module('homeModule',['homeSub4Module'])
+angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     .config(function($stateProvider, $urlRouterProvider){
         $stateProvider
             .state('home',{
