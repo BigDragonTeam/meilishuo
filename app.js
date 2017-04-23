@@ -1,5 +1,5 @@
-angular.module('mls',["ui.router",'angularCSS','homeModule','typeModule','cartModule','mineModule','homeSub1Module','homeSub2Module','homeSub3Module'])
-    .config(function($stateProvider, $urlRouterProvider){
+var app = angular.module('mls',["ui.router","me-lazyload",'angularCSS','homeModule','typeModule','cartModule','mineModule','homeSub1Module','homeSub2Module','homeSub3Module'])
+    app.config(function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('/home');
     })
     .controller("tabCtrl",["$scope",function($scope){
@@ -29,8 +29,8 @@ angular.module('mls',["ui.router",'angularCSS','homeModule','typeModule','cartMo
             $scope.isClassName4=true;
         };
         $scope.changeColor1();
-    }]);
-
+    }])
+	 
 
 
 

@@ -34,4 +34,13 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     		$scope.morenProducts3 = res.data.list;
     		
     	})
-    }]);
+    }])
+//  .controller('homeCtrl', ['$scope', function($scope){
+//          var url = 'http://www.gravatar.com/avatar/6ca6c6611136a3e05ce30d872da1b551.jpg?s=100';
+//          var ary = [];
+//          for(var i = 0; i < 40; i++){
+//              ary.push(url + '&t=' + i + (+new Date()))
+//          }
+//
+//          $scope.images = ary;
+//      }])
