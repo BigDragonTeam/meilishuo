@@ -1,4 +1,4 @@
-angular.module('typeModule',[])
+angular.module('typeModule',['typeMOdule1','typeMOdule2','typeMOdule3'])
     .config(function($stateProvider, $urlRouterProvider){
         $stateProvider
             .state('type',{
@@ -12,6 +12,7 @@ angular.module('typeModule',[])
         $http.get('json/classify/1.json').success(function (res) {
             var resdata=res.data;
             for (var i in resdata){
+                console.log(resdata[i])
                 if (resdata[i].list.length>10){
                     $scope.type_arr1=resdata[i].list;
                 }
@@ -21,7 +22,5 @@ angular.module('typeModule',[])
             $scope.type_arr2=res1.data;
 
         })
-        $http.get('json/classify/3.json').success(function (res2) {
 
-        })
     }]);
