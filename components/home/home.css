@@ -93,6 +93,16 @@
 	    color: #666;
 	
 }
+.more_clickOpenApp{
+	text-align:center;
+	border-top: 1px solid #eee;
+    color: #f36;
+    padding: .3rem;
+    font-size:.24rem;
+    background-color: #fff;
+    margin-top: -0.2rem;
+    margin-bottom: 0.2rem
+}
 .niuzaiku_item_detail{
 	padding:0 .2rem;
 	padding-top:.2rem;
@@ -117,6 +127,9 @@
 	height:2rem;
 	overflow:hidden;
 	
+}
+.moreHide{
+	display:none;
 }
 #home .niuzai_big{
 	position:relative;
@@ -220,10 +233,21 @@
 
 
 #123f{width: 100%;height: 100%;position: absolute;top: 0;background: red;}
+
 .navAct{
 	color:#FF3366;
 	border-bottom: 2px solid #FF3366;
 	    height: 0.6rem;
     line-height: 0.6rem;
     display:inline-block;
+}
+.J_toTop{
+	position:fixed;
+	right:.2rem;
+	bottom:1.35rem;
+	display:inline-block;
+	width:.86rem;
+	height:.86rem;
+	background: url(http://s16.mogucdn.com/p1/160527/upload_ie4doyjzmvsdsn3dhazdambqgiyde_86x86.png) no-repeat;
+	background-size:contain;
 }

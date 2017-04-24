@@ -83,7 +83,32 @@
 	font-size:.24rem;
 	background:#cccccc;
 	border-radius:.4rem;
+	overflow:hidden;
+	position:relative;
 }
+.jindu_y{
+	width:0;
+}
+.jindu_color{
+	display:inline-block;
+	background:red;
+	
+	height:.32rem;
+	left:0;
+	top:0;
+	position:absolute;
+	border-radius:.4rem;
+	 -webkit-animation-name: jingdu;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-timing-function: linear;
+	-webkit-transition: 0.5s linear all;
+  	transition: 20s ease-in all;
+	opacity: 0.5;
+}
+	@keyframes jingdu{
+		from{}
+		to{}
+	}
 .grey_price{
 	color:#999;
 }

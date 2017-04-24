@@ -8,7 +8,7 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
                 css:'components/home/home.css'
             })
     })
-    .controller('homeCtrl',['$scope','$http',function($scope,$http){
+    .controller('homeCtrl',['$scope','$http',"$location","$anchorScroll",function($scope,$http,$location,$anchorScroll){
     	
     	$http.get('json/home/1.json').success(function(res){
     		
@@ -58,7 +58,7 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     	$http.get('json/home/hot2.json').success(function(res){
     		console.log(res);
     		$scope.morenProducts4 = res.data.list;
-    		
+    		 
     	});
     	$scope.isact= 0;
     	
@@ -70,5 +70,19 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     		$scope.isact= num;
     	}
     	
+    		
+    		$scope.changeMore = function (more){
+    			
+    			$http.get('json/home/niuzaiku_more.json').success(function(res){
+    				$scope.more = res.data;
+    			});
+    			angular.element(document.querySelector('.more_clickOpenApp')).remove();
+    			
+    		}
+    	
+    	$scope.gotoTop = function(){
+    		$location.hash('top');
+    		$anchorScroll();
+    	}
     }])
   
