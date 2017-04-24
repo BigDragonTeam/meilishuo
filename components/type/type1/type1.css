@@ -1,0 +1,50 @@
+.type_dress1{
+    height: 100%;
+    width:100%;
+}
+.type_dress1 img{
+    width: 100%;
+}
+.type_dress_total img{
+    width: 100%;
+}
+.typedress_type{
+    height:0.85rem;
+    width:100%;
+    line-height: 0.85rem;
+
+}
+.typedress_type1{
+    width: 100%;
+    height: 100%;
+}
+.typedress_type li{
+    width:33.3%;
+    height: 100%;
+    float: left;
+    font-size: 0.3rem;
+    text-align: center;
+}
+.typedress_pop{
+    width: 100%;
+    height:auto;
+    position: relative;
+}
+.typedress_pop li{
+    float: left;
+    width:50%;
+    height:5.65rem;
+    font-size: 0.31rem;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding:0 0 4% 2%;
+}
+.typedress_pop img {
+    height: 80%;
+    width: 100%;
+
+}
+
+

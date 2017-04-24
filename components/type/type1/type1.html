@@ -1,1 +1,28 @@
-<p>dsadaduaoisd</p>
+<div class="type_dress1">
+    <img src="http://s17.mogucdn.com/p2/160919/upload_816hj19ad5hd8lj1b90g8g5ii6fk3_750x100.jpg_750x999.v1c7E.70.webp">
+    <div class="type_dress_total">
+        <img src="http://s18.mogucdn.com/p2/160919/upload_88a2dj4gk8759b26behc319hjlhjl_750x980.jpg_750x999.v1c7E.70.webp" alt="">
+    </div>
+    <img src="http://s16.mogucdn.com/p2/160919/upload_5h02fdk16eabgbj144h6cdkh6ebec_750x100.jpg_750x999.v1c7E.70.webp">
+    <img src="http://s17.mogucdn.com/p2/160919/upload_1659l020jhj0cc76a2cjdb0ble31l_750x736.jpg_750x999.v1c7E.70.webp">
+    <img src="http://s16.mogucdn.com/p2/160919/upload_20i9ji8fkkdjj0b24761i6hjd462h_750x99.png_750x999.v1c7E.70.webp">
+    <div class="typedress_type">
+        <ul class="typedress_type1">
+            <li ng-click="typepop(typedress_1)" ng-class="{typedress_class}">流行</li>
+            <li ng-click="typehot(typedress_2)">热销</li>
+            <li ng-click="typenew(typedress_3)">上新</li>
+        </ul>
+
+    </div>
+    <div>
+        <ul class="typedress_pop">
+            <li ng-repeat="item in typedress">
+                <img src="{{item.show.img}}" alt="">
+                <p>{{item.title}}</p>
+                <span>{{item.price}}</span>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
