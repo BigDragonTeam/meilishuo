@@ -43,13 +43,13 @@
 	<!--牛仔库end-->
 	<div class="home_module_tab">
 		<div class="home_module_nav">
-			<a href="">默认</a>
-			<a href="">新品</a>
-			<a href="">精选</a>
+			<span ng-click="changeProducts(0,morenProducts,morenProducts2,morenProducts3)" ><a href="" ng-class="{'navAct':isact==0}">默认</a></span>
+			<span ng-click="changeProducts(1,morenProducts2)" ><a href="" ng-class="{'navAct':isact==1}">新品</a></span>
+			<span ng-click="changeProducts(2,morenProducts4,morenProducts2)"><a href=""  ng-class="{'navAct':isact==2}">精选</a></span>
 		</div>
 	</div>
 	<div class="home_module_row">
-		<div class="module_item" ng-repeat="item in morenProducts">
+		<div class="module_item" ng-repeat="item in changePro">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
 					<img src="{{ttags.img}}" alt="" />
@@ -66,7 +66,7 @@
 		</div>
 	</div>
 	<div class="home_module_row">
-		<div class="module_item" ng-repeat="item in morenProducts2">
+		<div class="module_item" ng-repeat="item in changePro2">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
 					<img src="{{ttags.img}}" alt="" />
@@ -83,13 +83,13 @@
 		</div>
 	</div>
 	<div class="home_module_row">
-		<div class="module_item" ng-repeat="item in morenProducts3">
+		<div class="module_item" ng-repeat="item in changePro3">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
-					<img lazy-src="{{ttags.img}}" alt="" />
+					<img src="{{ttags.img}}" alt="" />
 				</div>
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
-					<img lazy-src="{{tags}}" alt="" class="img_tag" />
+					<img src="{{tags}}" alt="" class="img_tag" />
 				</div>
 				<div ng-repeat="img in images">
 					<img lazy-src="{{img}}" alt="" class="big_img_show"/>

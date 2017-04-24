@@ -3,13 +3,14 @@
 		<img src="https://s10.mogucdn.com/mlcdn/c45406/170419_181a5b11dibd6l27bkb2321gd0g3a_750x199.jpg_750x999.v1c7E.70.webp" alt="" />
 	</div>
 	<div class="module_row">
+	
 		<div class="sub_nav" ng-init="">
-			<a href="" class="first_a" ng-class="{ture:'sub_a_act',false:'sub_a_no'}[isAct]" ng-click="changebot()">23日12点</a>
-			<a href="" class="second_a" ng-class="">23日20点</a>
+			<a href="" class="first_a"  ng-click="changebot(0,firstSale.list)" ><span ng-class="{'sub_a_act':isAct==0}">23日12点</span></a>
+			<a href="" class="second_a" ng-click="changebot(1,secondSale.list)"><span ng-class="{'sub_a_act':isAct==1}">23日20点</span></a>
 		</div>
 		<div class="wall_wrap_bg">
 			<div class="wall_wrap">
-				<a href="" ng-repeat="item in firstSale.list" class="clearfix sub_item_box"> 
+				<a href="" ng-repeat="item in productsShow" class="clearfix sub_item_box"> 
 					<div class="poster_img">
 						<img src="{{item.image}}" alt="" />
 					</div>
