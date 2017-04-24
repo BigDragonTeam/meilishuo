@@ -32,17 +32,17 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     	$http.get('json/home/4.json').success(function(res){
     		console.log(res);
     		$scope.morenProducts3 = res.data.list;
-    		console.log($scope.morenProducts3.length);
+    		console.log($scope.morenProducts3);
+    		console.log($scope.morenProducts3[1].show.img)
     		
     	})
-    }])
-    .controller('homeCtrl', ['$scope', function($scope){
-            var url;
+    	 var url;
             var ary = [];
-            for(var i = 0; i < $scope.morenProducts3.length; i++){
-            	url = '$scope.morenProducts3[].img';
+            for(var i = 0; i < 40; i++){
+            	url = '$scope.morenProducts3[i].show.img';
                 ary.push(url + '&t=' + i + (+new Date()));
             }
 
             $scope.images = ary;
-        }])
+    }])
+  
