@@ -91,8 +91,9 @@
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
 					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
-				
-				<img lazy-src="{{item.show.img}}" alt="" class="big_img_show"/>
+				<div ng-repeat="img in images">
+					<img lazy-src="{{img}}" alt="" class="big_img_show"/>
+				</div>
 			</div>
 			<p class="home_module_tit">{{item.title}}</p>
 			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav}}</span></div>
