@@ -2,34 +2,34 @@ var app = angular.module('mls',["ui.router","me-lazyload",'angularCSS','homeModu
     app.config(function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('/home');
     })
-    .controller("tabCtrl",["$scope",function($scope){
+    .controller("tabCtrl",["$rootScope",function($rootScope){
 
-        $scope.changeColor1=function () {
-            $scope.isClassName1=true;
-            $scope.isClassName2=false;
-            $scope.isClassName3=false;
-            $scope.isClassName4=false;
+        $rootScope.changeColor1=function () {
+            $rootScope.isClassName1=true;
+            $rootScope.isClassName2=false;
+            $rootScope.isClassName3=false;
+            $rootScope.isClassName4=false;
         };
-        $scope.changeColor2=function () {
-            $scope.isClassName1=false;
-            $scope.isClassName2=true;
-            $scope.isClassName3=false;
-            $scope.isClassName4=false;
+        $rootScope.changeColor2=function () {
+            $rootScope.isClassName1=false;
+            $rootScope.isClassName2=true;
+            $rootScope.isClassName3=false;
+            $rootScope.isClassName4=false;
         };
-        $scope.changeColor3=function () {
-            $scope.isClassName1=false;
-            $scope.isClassName2=false;
-            $scope.isClassName3=true;
-            $scope.isClassName4=false;
+        $rootScope.changeColor3=function () {
+            $rootScope.isClassName1=false;
+            $rootScope.isClassName2=false;
+            $rootScope.isClassName3=true;
+            $rootScope.isClassName4=false;
         };
-        $scope.changeColor4=function () {
-            $scope.isClassName1=false;
-            $scope.isClassName2=false;
-            $scope.isClassName3=false;
-            $scope.isClassName4=true;
+        $rootScope.changeColor4=function () {
+            $rootScope.isClassName1=false;
+            $rootScope.isClassName2=false;
+            $rootScope.isClassName3=false;
+            $rootScope.isClassName4=true;
         };
-        $scope.changeColor1();
-    }])
+        $rootScope.changeColor1();
+    }]);
 	 
 
 
