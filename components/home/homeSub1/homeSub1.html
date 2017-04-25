@@ -1,0 +1,61 @@
+<div class="home_sub_header">
+	<img src="https://s10.mogucdn.com/mlcdn/c45406/170324_02736566b3l9083012c580ekh0g56_750x360.jpg_750x999.v1c7E.70.webp" alt="" />
+</div>
+<div class="sub1_nav">
+	<span ng-click="changeSub1Pro(0,sub1Producs,singelGoods)"><a href="" ng-class="{sub1Act:isNum == 0}">周二上新</a></span>
+	<span ng-click="changeSub1Pro(1,singelGoods)"><a href="" ng-class="{sub1Act:isNum == 1}">一周新品</a></span>
+	<span ng-click="changeSub1Pro(2,singelGoods2)"><a href="" ng-class="{sub1Act:isNum == 2}">一周热销</a></span>
+</div>
+<div class="module_row">
+	<div class="item_product" ng-repeat="item in changePro1">
+		<a href="">
+			<div class="sub_imgbox">
+				<img lazy-src="{{item.image}}" alt="" />
+			</div>
+			<div class=''>
+				<p class="item_title">{{item.title}}</p>
+				<div class="clearfix price_box_wrap">
+					<span class="sub1_price">￥{{item.price}}</span>
+					<span class="sub1_sale">销量{{item.collectNum}}</span>
+				</div>
+				<div class="buy_box">
+					<div class="sub1_buy_now">立即抢购</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="item_product" ng-repeat="item in changePro2.list">
+		<a href="">
+			<div class="sub_imgbox">
+				<img lazy-src="{{item.image}}" alt="" />
+			</div>
+			<div class=''>
+				<p class="item_title">{{item.title}}</p>
+				<div class="clearfix price_box_wrap">
+					<span class="sub1_price">￥{{item.price}}</span>
+					<span class="sub1_sale">销量{{item.collectNum}}</span>
+				</div>
+				<div class="buy_box">
+					<div class="sub1_buy_now">立即抢购</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="item_product" ng-repeat="item in changePro3">
+		<a href="">
+			<div class="sub_imgbox">
+				<img lazy-src="{{item.image}}" alt="" />
+			</div>
+			<div class=''>
+				<p class="item_title">{{item.title}}</p>
+				<div class="clearfix price_box_wrap">
+					<span class="sub1_price">￥{{item.price}}</span>
+					<span class="sub1_sale">销量{{item.collectNum}}</span>
+				</div>
+				<div class="buy_box">
+					<div class="sub1_buy_now">立即抢购</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>

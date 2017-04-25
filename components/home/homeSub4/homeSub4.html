@@ -22,7 +22,8 @@
 							<span class="grey_price">原价<del>{{item.price}}</del></span>
 						</div>
 						<div class="bot_box">
-							<span class="shenyu">仅剩{{item.itemInventory-item.itemSale}}件</span>
+							<span class="shenyu">仅剩{{item.itemInventory-item.itemSale}}件<span class="jindu_y jindu_color " ng-style="{width:{{(item.itemInventory-item.itemSale)/item.itemInventory}}+'rem'}"></span></span>
+							
 							<span class="buy_now">准点开抢</span>
 						</div>
 					</div>

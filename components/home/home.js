@@ -1,4 +1,4 @@
-angular.module('homeModule',['homeSub4Module','homeSub0Module'])
+angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
     .config(function($stateProvider, $urlRouterProvider){
         $stateProvider
             .state('home',{
@@ -8,7 +8,7 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
                 css:'components/home/home.css'
             })
     })
-    .controller('homeCtrl',['$scope','$http',function($scope,$http){
+    .controller('homeCtrl',['$scope','$http',"$location","$anchorScroll",function($scope,$http,$location,$anchorScroll){
     	
     	$http.get('json/home/1.json').success(function(res){
     		
@@ -37,15 +37,7 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     		console.log($scope.morenProducts3);
     		console.log($scope.morenProducts3[1].show.img);
     		
-    		 var url;
-            var ary = [];
-            for(var i = 0; i < $scope.morenProducts3.length; i++){
-            	url = $scope.morenProducts3[i].show.img;
-                ary.push(url + '&t=' + i + (+new Date()));
-            }
-			
-            $scope.images = ary;
-            console.log($scope.images);
+    		
     		
     	});
     	//默认结束
@@ -58,7 +50,19 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     	$http.get('json/home/hot2.json').success(function(res){
     		console.log(res);
     		$scope.morenProducts4 = res.data.list;
-    		
+    		 
+    		 
+    		 	   $('#main').on('scroll',function(){
+	   	console.log($('#main').scrollTop());
+			if($('#main').scrollTop()>1400)
+			{	
+				$('.J_toTop').show();
+				$('.home_module_tab').addClass('change_fixed');
+			}else{
+				$('.home_module_tab').removeClass('change_fixed');
+				$('.J_toTop').hide();
+			}
+    	});
     	});
     	$scope.isact= 0;
     	
@@ -70,5 +74,23 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     		$scope.isact= num;
     	}
     	
+    		
+    		$scope.changeMore = function (more){
+    			
+    			$http.get('json/home/niuzaiku_more.json').success(function(res){
+    				$scope.more = res.data;
+    			});
+    			angular.element(document.querySelector('.more_clickOpenApp')).remove();
+    			
+    		}
+    	
+    	$scope.gotoTop = function(){
+    		$location.hash('top');
+    		$anchorScroll();
+    	}
+    	
+    	$('.J_toTop').css('display','none');
+    	//滚动事件
+
     }])
   

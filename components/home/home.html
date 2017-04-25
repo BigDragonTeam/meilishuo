@@ -1,7 +1,7 @@
 <div id="home" ui-view >
 	<header class="clearfix">
 		<form action="" method="post">
-			<a href="" class="home_btn"></a>
+			<a href="" class="home_btn" id="top"></a>
 			<input type="text" class="head_search" placeholder="卫衣" date-value="卫衣"/>
 			<div class='head_right_info'>
 				
@@ -39,6 +39,28 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="more_clickOpenApp" ng-click="changeMore(more)">更多<i class="arrow"></i></div>
+		<div class="niuzaiku_wrap" ng-repeat="item in more">
+			<div class="niuzaiku_item_box">
+				<a ng-href="{{item.originUrl}}" title="{{item.title}}" class="niuzai_big"><img ng-src="{{item.image}}" alt="" width="100%"/>
+					<p class="f_title">{{item.title}}</p>
+					<p class="small_tit">{{item.subtitle}}</p>
+				</a>
+				
+				<div class="niuzaiku_item_detail">
+					<a href="" ng-repeat="item1 in item.goodsList">
+						<figure><img ng-src="{{item1.image}}" alt="" class="goods_item_img" width="100%"/>
+						
+						</figure>
+						<figcaption>
+							<p class='goods_item_title'>{{item1.title}}</p>
+							<p class="goods_item_price">￥{{item1.price}}</p>
+						</figcaption>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--牛仔库end-->
 	<div class="home_module_tab">
@@ -52,13 +74,13 @@
 		<div class="module_item" ng-repeat="item in changePro">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
-					<img src="{{ttags.img}}" alt="" />
+					<img lazy-src="{{ttags.img}}" alt="" />
 				</div>
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
-					<img ng-src="{{tags}}" alt="" class="img_tag" />
+					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
 				
-				<img ng-src="{{item.show.img}}" alt="" class="big_img_show"/>
+				<img lazy-src="{{item.show.img}}" alt="" class="big_img_show"/>
 			</div>
 			<p class="home_module_tit">{{item.title}}</p>
 			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav
@@ -69,13 +91,13 @@
 		<div class="module_item" ng-repeat="item in changePro2">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
-					<img src="{{ttags.img}}" alt="" />
+					<img lazy-src="{{ttags.img}}" alt="" />
 				</div>
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
-					<img ng-src="{{tags}}" alt="" class="img_tag" />
+					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
 				
-				<img ng-src="{{item.show.img}}" alt="" class="big_img_show"/>
+				<img lazy-src="{{item.show.img}}" alt="" class="big_img_show"/>
 			</div>
 			<p class="home_module_tit">{{item.title}}</p>
 			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav
@@ -86,10 +108,10 @@
 		<div class="module_item" ng-repeat="item in changePro3">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
-					<img src="{{ttags.img}}" alt="" />
+					<img lazy-src="{{ttags.img}}" alt="" />
 				</div>
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
-					<img src="{{tags}}" alt="" class="img_tag" />
+					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
 				<div ng-repeat="img in images">
 					<img lazy-src="{{img}}" alt="" class="big_img_show"/>
@@ -99,4 +121,5 @@
 			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav}}</span></div>
 		</div>
 	</div>
+	<a href="" class="J_toTop" ng-click="gotoTop()"></a>
 </div>
