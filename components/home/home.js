@@ -51,6 +51,18 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
     		console.log(res);
     		$scope.morenProducts4 = res.data.list;
     		 
+    		 
+    		 	   $('#main').on('scroll',function(){
+	   	console.log($('#main').scrollTop());
+			if($('#main').scrollTop()>1400)
+			{	
+				$('.J_toTop').show();
+				$('.home_module_tab').addClass('change_fixed');
+			}else{
+				$('.home_module_tab').removeClass('change_fixed');
+				$('.J_toTop').hide();
+			}
+    	});
     	});
     	$scope.isact= 0;
     	
@@ -79,16 +91,6 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
     	
     	$('.J_toTop').css('display','none');
     	//滚动事件
-	   $('#home').on('scroll',function(){
-	   	console.log($('#home').scrollTop());
-			if($('#home').scrollTop()>1400)
-			{	
-				$('.J_toTop').show();
-				$('.home_module_tab').addClass('change_fixed');
-			}else{
-				$('.home_module_tab').removeClass('change_fixed');
-				$('.J_toTop').hide();
-			}
-    	});
+
     }])
   

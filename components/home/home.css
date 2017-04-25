@@ -7,8 +7,7 @@
 }
 #home{
 	    background-color: #f1f1f1;
-	    height:100%;
-	    overflow:auto;
+	    /*height:100%;*/
 }
 #home img{
 	display:block;
@@ -253,4 +252,7 @@
 }
 .change_fixed{
 	position:fixed;
+	top:0;
+	z-index:99;
+	width:100%;
 }
