@@ -22,8 +22,5 @@ angular.module('homeSub4Module',[])
 		$scope.secondSale = res.data['45626'];
 		$scope.productsShow =$scope.firstSale.list;
 	});
-	//滚动事件
-	   $(window).scroll(function(event){
-			$('')
-    });
+	
 }])
