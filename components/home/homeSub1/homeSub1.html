@@ -7,8 +7,8 @@
 	<span ng-click="changeSub1Pro(2,singelGoods2)"><a href="" ng-class="{sub1Act:isNum == 2}">一周热销</a></span>
 </div>
 <div class="module_row">
-	<div class="item_product" ng-repeat="item in changePro1">
-		<a href="">
+	<div class="item_product" ng-repeat="item in changePro1" ui-sref="detail" ng-click="toDetail(item.image,item.title,item.price)">
+		<a href="" >
 			<div class="sub_imgbox">
 				<img lazy-src="{{item.image}}" alt="" />
 			</div>

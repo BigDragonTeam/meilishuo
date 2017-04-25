@@ -71,7 +71,7 @@
 		</div>
 	</div>
 	<div class="home_module_row">
-		<div class="module_item" ng-repeat="item in changePro">
+		<div class="module_item" ng-repeat="item in changePro" ui-sref="detail" ng-click="toDetail(item.show.img,item.title,item.price)">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
 					<img lazy-src="{{ttags.img}}" alt="" />

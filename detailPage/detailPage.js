@@ -9,5 +9,5 @@ angular.module('detailModule',[])
             })
     })
     .controller('detailCtrl',['$scope',function($scope){
-
+		$('.tab').empty();
     }]);
