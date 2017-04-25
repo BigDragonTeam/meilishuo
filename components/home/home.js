@@ -84,5 +84,19 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     		$location.hash('top');
     		$anchorScroll();
     	}
+    	
+    	$('.J_toTop').css('display','none');
+    	//滚动事件
+	   $('#home').on('scroll',function(){
+	   	console.log($('#home').scrollTop());
+			if($('#home').scrollTop()>1400)
+			{	
+				$('.J_toTop').show();
+				$('.home_module_tab').addClass('change_fixed');
+			}else{
+				$('.home_module_tab').removeClass('change_fixed');
+				$('.J_toTop').hide();
+			}
+    	});
     }])
   

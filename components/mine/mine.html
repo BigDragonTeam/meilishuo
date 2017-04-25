@@ -11,25 +11,25 @@
             <div id="mine_user_collect">
                 <ul>
                     <li id="main_collect_goods">
-                        <a ui-sref="" href="">
+                        <a href="">
                             <p class="">0</p>
                             <p>收藏的宝贝</p>
                         </a>
                     </li>
                     <li id="main_collect_shop">
-                        <a ui-sref="" href="">
+                        <a href="">
                             <p>0</p>
                             <p>收藏的店铺</p>
                         </a>
                     </li>
                     <li id="main_collect_coupon">
-                        <a ui-sref="" href="">
+                        <a href="">
                             <p id="mine_collect_icon1"></p>
                             <p>优惠券</p>
                         </a>
                     </li>
                     <li id="main_collect_path">
-                        <a ui-sref="" href="">
+                        <a href="">
                             <p id="mine_collect_icon2"></p>
                             <p>收货地址</p>
                         </a>
@@ -39,16 +39,16 @@
         </div>
         <div id="mine_orderTab">
             <ul>
-                <li ng-class="{true:'getRed1',false:'getWhite'}[isClassName1]" ng-click="changeColor1()">
+                <li ng-class="{true:'getRed1',false:'getWhite'}[isClassName11]" ng-click="changeColor11()" ui-sref=".mine_allOrder">
                     <p>全部订单</p>
                 </li>
-                <li ng-class="{true:'getRed2',false:'getWhite'}[isClassName2]" ng-click="changeColor2()">
+                <li ng-class="{true:'getRed2',false:'getWhite'}[isClassName22]" ng-click="changeColor22()" ui-sref=".mine_paying">
                     <p>待付款</p>
                 </li>
-                <li ng-class="{true:'getRed3',false:'getWhite'}[isClassName3]" ng-click="changeColor3()">
+                <li ng-class="{true:'getRed3',false:'getWhite'}[isClassName33]" ng-click="changeColor33()" ui-sref=".mine_getting">
                     <p>待收货</p>
                 </li>
-                <li ng-class="{true:'getRed4',false:'getWhite'}[isClassName4]" ng-click="changeColor4()">
+                <li ng-class="{true:'getRed4',false:'getWhite'}[isClassName44]" ng-click="changeColor44()" ui-sref=".mine_ave">
                     <p>待评价</p>
                 </li>
             </ul>

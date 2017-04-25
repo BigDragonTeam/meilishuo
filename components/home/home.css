@@ -251,3 +251,6 @@
 	background: url(http://s16.mogucdn.com/p1/160527/upload_ie4doyjzmvsdsn3dhazdambqgiyde_86x86.png) no-repeat;
 	background-size:contain;
 }
+.change_fixed{
+	position:fixed;
+}
