@@ -12,7 +12,6 @@ angular.module('typeModule',['type1Module','type2Module','type3Module'])
         $http.get('json/classify/1.json').success(function (res) {
             var resdata=res.data;
             for (var i in resdata){
-                console.log(resdata[i])
                 if (resdata[i].list.length>10){
                     $scope.type_arr1=resdata[i].list;
                 }

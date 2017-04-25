@@ -1,4 +1,4 @@
-angular.module('homeModule',['homeSub4Module','homeSub0Module'])
+angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
     .config(function($stateProvider, $urlRouterProvider){
         $stateProvider
             .state('home',{
@@ -37,15 +37,7 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module'])
     		console.log($scope.morenProducts3);
     		console.log($scope.morenProducts3[1].show.img);
     		
-    		 var url;
-            var ary = [];
-            for(var i = 0; i < $scope.morenProducts3.length; i++){
-            	url = $scope.morenProducts3[i].show.img;
-                ary.push(url + '&t=' + i + (+new Date()));
-            }
-			
-            $scope.images = ary;
-            console.log($scope.images);
+    		
     		
     	});
     	//默认结束

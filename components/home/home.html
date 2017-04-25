@@ -74,13 +74,13 @@
 		<div class="module_item" ng-repeat="item in changePro">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
-					<img src="{{ttags.img}}" alt="" />
+					<img lazy-src="{{ttags.img}}" alt="" />
 				</div>
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
-					<img ng-src="{{tags}}" alt="" class="img_tag" />
+					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
 				
-				<img ng-src="{{item.show.img}}" alt="" class="big_img_show"/>
+				<img lazy-src="{{item.show.img}}" alt="" class="big_img_show"/>
 			</div>
 			<p class="home_module_tit">{{item.title}}</p>
 			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav
@@ -91,13 +91,13 @@
 		<div class="module_item" ng-repeat="item in changePro2">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
-					<img src="{{ttags.img}}" alt="" />
+					<img lazy-src="{{ttags.img}}" alt="" />
 				</div>
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
-					<img ng-src="{{tags}}" alt="" class="img_tag" />
+					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
 				
-				<img ng-src="{{item.show.img}}" alt="" class="big_img_show"/>
+				<img lazy-src="{{item.show.img}}" alt="" class="big_img_show"/>
 			</div>
 			<p class="home_module_tit">{{item.title}}</p>
 			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav
@@ -108,10 +108,10 @@
 		<div class="module_item" ng-repeat="item in changePro3">
 			<div class="img_wrap">
 				<div class="top_img_tags" ng-if="item.lefttop_taglist" ng-repeat="ttags in item.lefttop_taglist">
-					<img src="{{ttags.img}}" alt="" />
+					<img lazy-src="{{ttags.img}}" alt="" />
 				</div>
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
-					<img src="{{tags}}" alt="" class="img_tag" />
+					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
 				<div ng-repeat="img in images">
 					<img lazy-src="{{img}}" alt="" class="big_img_show"/>
