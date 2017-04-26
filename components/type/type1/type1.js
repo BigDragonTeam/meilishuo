@@ -11,7 +11,7 @@ angular.module('type1Module',[])
     .controller('type1Ctrl',['$scope','$http',function($scope,$http){
         $http.get('json/classify/typedress/1.json').success(function (dressres) {
             $scope.typedress_1=dressres.data.list;
-            console.log($scope.typedress_1);
+
             $scope.typedress=$scope.typedress_1;
                  $scope.typepop=function (k) {
                      $scope.typedress=k;
