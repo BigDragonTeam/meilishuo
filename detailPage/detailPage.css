@@ -1,5 +1,6 @@
 #detail_wrap{
     position: relative;
+    height:90%;
 }
 #detail_img{
     width:100%;
@@ -30,4 +31,75 @@
     text-align: center;
     color: #f36;
     background: white;
+}
+#deta_tab>div{
+	float:left;
+	height:100%;
+	text-align:center;
+	 
+}
+#deta_tab .icon{
+	width:.44rem;
+	height:.44rem;
+	display:inline-block;
+	margin-top:.2rem;
+}
+#deta_tab span{
+	display:block;
+}
+.kefu .icon{
+	background: url(http://s17.mogucdn.com/p1/160518/upload_ifqtoztggfqtsyjzhazdambqgyyde_44x300.png) no-repeat 0 -1.05rem;
+	background-size:.44rem;
+}
+.dianp .icon{
+	background: url(http://s17.mogucdn.com/p1/160518/upload_ifqtoztggfqtsyjzhazdambqgyyde_44x300.png) no-repeat 0 -2rem;
+	background-size:.44rem;
+}
+.collect .icon{
+	background: url(http://s17.mogucdn.com/p1/160518/upload_ifqtoztggfqtsyjzhazdambqgyyde_44x300.png) no-repeat 0 0;
+	background-size:.44rem;
+}
+#deta_tab{
+	position: fixed;
+    bottom: 0;
+    
+    z-index: 6;
+    width: 100%;
+    height:10%;
+    border-top: 1px solid #dcdcdc;
+    font-size: .28rem;
+    vertical-align: middle;
+   
+}
+.kefu{
+	width: 1.24rem;
+    text-align: center;
+    
+}
+.dianp{
+	width:1.24rem;
+}
+.collect{
+	width:1.24rem;
+}
+.deta_buy_car{
+	width:1.88rem;
+	display:inline-block;
+	background:#ffe817;
+	
+}
+.deta_buy_now{
+	background:#ff3366;
+	width:1.88rem;
+	color:#fff;
+}
+.addSome{
+	font-size:0;
+	
+}
+#deta_tab .addSome span{
+	display:inline-block;
+	font-size:.32rem;
+	height:100%;
+	padding-top:.4rem;
 }
