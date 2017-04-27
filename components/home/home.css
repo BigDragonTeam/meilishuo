@@ -74,6 +74,8 @@
 	
 	
 }
+#home .home_box_wrap ul::-webkit-scrollbar{display: none;}
+
 #home .home_box_wrap ul:before{
 	-webkit-tap-highlight-color: rgba(255,255,255,0);
 	-webkit-user-drag: none;
@@ -107,8 +109,11 @@
 	padding-top:.2rem;
 	overflow:hidden;
 	overflow-x: scroll;
-	white-space: nowrap;	
+	white-space: nowrap;
+		
 }
+.niuzaiku_item_detail::-webkit-scrollbar{display: none;}
+
 .niuzai_big{
 	display:block;
 }
