@@ -1,7 +1,20 @@
 <ul class="typedress_type">
     <li ng-click="typetrousersclick(typetrouser1)">流行</li>
     <li ng-click="typetrousersclick(typetrouser2)">热销</li>
+    <li ng-click="typetoggle1()">价格</li>
 </ul>
+<div class=" typehideandshow" ng-hide="typehide1">
+    <ul >
+        <li ng-click="typetrousersclick(typetrouser3)">0-30</li>
+        <li ng-click="typetrousersclick(typetrouser4)">30-60</li>
+        <li ng-click="typetrousersclick(typetrouser5)">60以上</li>
+    </ul>
+    <div class="typeinput" >
+        <input type="text">-<input type="text">
+        <input type="button" value="清空"><input type="button" value="确认">
+    </div>
+</div>
+
 <div>
     <ul class="typedress_pop">
         <li ng-repeat="item in typetrouserscont" ui-sref="detail" ng-click="toDetail(item.show.img,item.title,item.price)">

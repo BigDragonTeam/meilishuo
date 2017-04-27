@@ -7,12 +7,73 @@
 }
 
 .typedress_type li{
-    width:50%;
+    width:33.3%;
     height: 100%;
     float: left;
     font-size: 0.3rem;
     text-align: center;
 }
+.typehideandshow{
+    width:100%;
+    height:2.2rem;
+    position: fixed;
+    z-index: 3;
+    background: #ffffff;
+}
+
+.typehideandshow ul{
+    height:1.1rem;
+    line-height:1.1rem;
+    width:100%;
+    padding:2% 0 4% 0;
+
+
+}
+
+.typehideandshow ul li{
+    width:30%;
+    height:0.6rem;
+    margin: 2% 0 0 2%;
+    float: left;
+    line-height: 0.6rem;
+    background: #f3f3f3;
+    font-size:0.3rem;
+    text-align: center;
+}
+.typehideandshow .typeinput{
+    width:100%;
+    height: 1rem;
+}
+.typehideandshow .typeinput input[type='text']{
+    width: 1.7rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin: 0.2rem 0 0 0.2rem;
+    border-radius: 2px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    font-size: .28rem;
+}
+.typehideandshow .typeinput input[type='button']{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    width: 1.26rem;
+    margin-left: 0.1rem;
+    background-color: #ff5b76;
+    color: white;
+    border:none;
+    border-radius: 2px;
+}
+.typehideandshow .typeinput input:nth-child(3){
+    background: #ffffff;
+    color: #ff5b76;
+    border: 1px solid #ff5b76;
+}
+
 .typedress_pop{
     width: 100%;
     height:auto;
@@ -24,10 +85,13 @@
     height:5.65rem;
     font-size: 0.31rem;
     color: #666;
+
+    padding:0 0 4% 2%;
+}
+.typedress_pop li p{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding:0 0 4% 2%;
 }
 .typedress_pop img {
     height: 80%;

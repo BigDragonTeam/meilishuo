@@ -16,7 +16,8 @@ angular.module('typecoat2Module',[])
             $scope.typetrouser1=typetrousersres.data.list;
             $scope.typetrouserscont=$scope.typetrouser1;
             $scope.typetrousersclick=function (m) {
-                $scope.typetrouserscont=m
+                $scope.typetrouserscont=m;
+                $scope.typehide1=true;
 
 
             }
@@ -25,6 +26,22 @@ angular.module('typecoat2Module',[])
         $http.get('json/classify/typecoat/4.json').success(function (typetrousersres) {
             $scope.typetrouser2=typetrousersres.data.list;
             
+
+        })
+        $scope.typehide1=true;
+        $scope.typetoggle1=function () {
+            $scope.typehide1=!$scope.typehide1;
+        }
+        $http.get('components/type/typecoat2/json/1.json').success(function (typetrousersres) {
+            $scope.typetrouser3=typetrousersres.data.list;
+
+        })
+        $http.get('components/type/typecoat2/json/2.json').success(function (typetrousersres) {
+            $scope.typetrouser4=typetrousersres.data.list;
+
+        })
+        $http.get('components/type/typecoat2/json/3.json').success(function (typetrousersres) {
+            $scope.typetrouser5=typetrousersres.data.list;
 
         })
     }])

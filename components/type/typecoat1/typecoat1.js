@@ -16,13 +16,31 @@ angular.module('typecoat1Module',[])
             $scope.typecoats1=typecoatres.data.list;
             $scope.typecoatcont=$scope.typecoats1;
             $scope.typecoats=function (k) {
-                $scope.typecoatcont=k
+                $scope.typecoatcont=k;
+                $scope.typehide=true;
             }
         });
         $http.get('json/classify/typecoat/2.json').success(function (typecoatres) {
             $scope.typecoats2=typecoatres.data.list;
 
+        });
+        $scope.typehide=true;
+        $scope.typetoggle=function () {
+            $scope.typehide=!$scope.typehide;
+        }
+        $http.get('components/type/typecoat1/json/1.json').success(function (typecoatres) {
+                $scope.typecoats3=typecoatres.data.list;
+
+            })
+        $http.get('components/type/typecoat1/json/2.json').success(function (typecoatres) {
+            $scope.typecoats4=typecoatres.data.list;
+
         })
+        $http.get('components/type/typecoat1/json/3.json').success(function (typecoatres) {
+            $scope.typecoats5=typecoatres.data.list;
+
+        })
+
 
     }])
 
