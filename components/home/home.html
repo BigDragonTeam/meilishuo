@@ -1,13 +1,23 @@
-<div id="home" ui-view >
+<div id="home" ui-view>
 	<header class="clearfix">
 		<form action="" method="post">
 			<a href="" class="home_btn" id="top"></a>
-			<input type="text" class="head_search" placeholder="卫衣" date-value="卫衣"/>
-			<div class='head_right_info'>
-				
+			<input ng-click="aaaaa()" type="text" class="head_search" placeholder="卫衣" date-value="卫衣" />
+			<div class='head_right_info' ng-class="{ture:'iconShow',false:'iconHide'}[isAct]" ng-click="hide()">
 			</div>
+			
 		</form>
 	</header>
+	<!--search content-->
+	<div class="search_cnt" ng-class="{show:isShow == 0}">
+		<div class="show_hotkeys">
+			<span class="tit_icon"></span>
+			<h6 class="search_title">热门搜索</h6>
+			<ul class="clearfix">
+				<li ng-repeat="item in hotKeys"><a href="">{{item.words}}</a></li>
+			</ul>
+		</div>		
+	</div>
 	<div class="slide_banner">
 		<a href="" ng-url="{{homeBanner.link}}">
 			<img src="{{homeBanner.image}}" alt="" width="100%"/>

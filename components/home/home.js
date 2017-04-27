@@ -10,11 +10,29 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
     })
     .controller('homeCtrl',['$scope','$http',"$location","$anchorScroll",function($scope,$http,$location,$anchorScroll){
     	
+    	$scope.isShow = 1;
+	    	
+	    //点击搜索
+	    $scope.aaaaa = function (){
+	    	$scope.isShow=0;
+	    	 $scope.isAct = false;
+	    }
+	    $scope.isAct = true;
+	    $scope.hide = function (){
+	    	$scope.isShow=1;
+	    	 $scope.isAct = true;
+	    }
+//	    $('.head_search').on('click',function(){
+//	    	aaaaa();
+//	    })
+	    
+    	
     	$http.get('json/home/1.json').success(function(res){
-    		
+    		console.log(res);
+    		$scope.hotKeys = res.data['5868'].list;
     		$scope.homeBanner= res.data['5956'].list[0];
     		$scope.boxSlide = res.data['898989'].list;
-    		
+	    	
     	});
     	$http.get('json/home/niuzaiku.json').success(function(res){
     		

@@ -3,7 +3,7 @@
 		<img src="https://s10.mogucdn.com/mlcdn/c45406/170420_41cd5dc6b68jki1dhjbgad81fecbj_750x655.jpg_750x999.v1c7E.70.webp" alt="" />
 	</div>
 	<div class="j_nav">
-		<a href=''class="a1">潮流速递</a>
+		<a href=''class="a1" javascript:void(0)>潮流速递</a>
 		<a href='' class="a2">第四期新品</a>
 		<a href='' class="a3">T恤</a>
 		<a href='' class="a4">衬衫</a>
@@ -51,10 +51,100 @@
 		</div>
 	</div>
 	<div class="single_goods2">
-		<div class="item_single" ng-repeat="item in singelGoods2.list">
+		<div class="item_single" ng-repeat="(i,item) in singelGoods2.list">
 			<a ng-href="{{item.item_url}}">
 				<div class="single_imgbox">
-					<img ng-src="{{item.image}}" alt="" />
+					<img lazy-src="{{item.image}}" alt="" />
+					<div class="sale_item">已售{{item.itemSale}}</div>
+				</div>
+				<div class="sub_price_all">
+					<span class="leftIcon">新品价</span>
+					<em class="item_price">￥{{item.price}}</em>
+				</div>
+				<h5 class="jp_tit">{{item.title}}</h5>
+			</a>
+		</div>
+	</div>
+	<div class="single_goods2">
+		<div class="item_single" ng-repeat="(i,item) in singelGoods3.list">
+			<a ng-href="{{item.item_url}}">
+				<div class="single_imgbox">
+					<img lazy-src="{{item.image}}" alt="" />
+					<div class="sale_item">已售{{item.itemSale}}</div>
+				</div>
+				<div class="sub_price_all">
+					<span class="leftIcon">新品价</span>
+					<em class="item_price">￥{{item.price}}</em>
+				</div>
+				<h5 class="jp_tit">{{item.title}}</h5>
+			</a>
+		</div>
+	</div>
+	<div class="single_goods2">
+		<div class="item_single" ng-repeat="(i,item) in singelGoods4.list">
+			<a ng-href="{{item.item_url}}">
+				<div class="single_imgbox">
+					<img lazy-src="{{item.image}}" alt="" />
+					<div class="sale_item">已售{{item.itemSale}}</div>
+				</div>
+				<div class="sub_price_all">
+					<span class="leftIcon">新品价</span>
+					<em class="item_price">￥{{item.price}}</em>
+				</div>
+				<h5 class="jp_tit">{{item.title}}</h5>
+			</a>
+		</div>
+	</div>
+	<div class="single_goods2">
+		<div class="item_single" ng-repeat="(i,item) in singelGoods5.list">
+			<a ng-href="{{item.item_url}}">
+				<div class="single_imgbox">
+					<img lazy-src="{{item.image}}" alt="" />
+					<div class="sale_item">已售{{item.itemSale}}</div>
+				</div>
+				<div class="sub_price_all">
+					<span class="leftIcon">新品价</span>
+					<em class="item_price">￥{{item.price}}</em>
+				</div>
+				<h5 class="jp_tit">{{item.title}}</h5>
+			</a>
+		</div>
+	</div>
+	<div class="single_goods2">
+		<div class="item_single" ng-repeat="(i,item) in singelGoods6.list">
+			<a ng-href="{{item.item_url}}">
+				<div class="single_imgbox">
+					<img lazy-src="{{item.image}}" alt="" />
+					<div class="sale_item">已售{{item.itemSale}}</div>
+				</div>
+				<div class="sub_price_all">
+					<span class="leftIcon">新品价</span>
+					<em class="item_price">￥{{item.price}}</em>
+				</div>
+				<h5 class="jp_tit">{{item.title}}</h5>
+			</a>
+		</div>
+	</div>
+	<div class="single_goods2">
+		<div class="item_single" ng-repeat="(i,item) in singelGoods7.list">
+			<a ng-href="{{item.item_url}}">
+				<div class="single_imgbox">
+					<img lazy-src="{{item.image}}" alt="" />
+					<div class="sale_item">已售{{item.itemSale}}</div>
+				</div>
+				<div class="sub_price_all">
+					<span class="leftIcon">新品价</span>
+					<em class="item_price">￥{{item.price}}</em>
+				</div>
+				<h5 class="jp_tit">{{item.title}}</h5>
+			</a>
+		</div>
+	</div>
+	<div class="single_goods2">
+		<div class="item_single" ng-repeat="(i,item) in singelGoods8.list">
+			<a ng-href="{{item.item_url}}">
+				<div class="single_imgbox">
+					<img lazy-src="{{item.image}}" alt="" />
 					<div class="sale_item">已售{{item.itemSale}}</div>
 				</div>
 				<div class="sub_price_all">
