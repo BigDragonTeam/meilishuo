@@ -56,20 +56,3 @@
         <div id="mine_orderList" ui-view></div>
     </div>
 </div>
-
-<div id="tab" ng-controller="tabCtrl">
-	            <ul>
-	                <li>
-	                    <a ui-sref="home" href="" ng-class="{true:'getRed1',false:'getWhite'}[isClassName1]" ng-click="changeColor1()">首页</a>
-	                </li>
-	                <li>
-	                    <a ui-sref="type" href="" ng-class="{true:'getRed2',false:'getWhite'}[isClassName2]" ng-click="changeColor2()">分类</a>
-	                </li>
-	                <li>
-	                    <a ui-sref="cart" href="" ng-class="{true:'getRed3',false:'getWhite'}[isClassName3]" ng-click="changeColor3()">购物车</a>
-	                </li>
-	                <li>
-	                    <a ui-sref="mine.mine_allOrder" href="" ng-class="{true:'getRed4',false:'getWhite'}[isClassName4]" ng-click="changeColor4()">我的</a>
-	                </li>
-	            </ul>
-       		 </div>
