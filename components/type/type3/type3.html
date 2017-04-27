@@ -16,7 +16,7 @@
     </div>
     <div>
         <ul class="typedress_pop">
-            <li ng-repeat="item in typebag" ui-sref="detail" ng-click="toDetail(item.show.img,item.title,item.price)">
+            <li ng-repeat="item in typebag" ui-sref="detail" ng-click="toDetail(item.show.img,item.title,item.price,item.sale,item.cfav)">
                 <img src="{{item.show.img}}" alt="">
                 <p>{{item.title}}</p>
                 <span>{{item.price}}</span>
