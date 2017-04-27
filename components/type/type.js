@@ -1,4 +1,4 @@
-angular.module('typeModule',['type1Module','type2Module','type3Module'])
+angular.module('typeModule',['type1Module','type2Module','type3Module','typecoat1Module','typecoat2Module'])
     .config(function($stateProvider, $urlRouterProvider){
         $stateProvider
             .state('type',{
