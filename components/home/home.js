@@ -22,21 +22,22 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
     	});
     	//默认
     	$http.get('json/home/2.json').success(function(res){
-    		console.log(res);
+//  		console.log(res);
     		$scope.morenProducts = res.data.list;
     		$scope.changePro = 	$scope.morenProducts;
     	});
     	$http.get('json/home/3.json').success(function(res){
-    		console.log(res);
+    		console.log('arr',res.data.list);
     		$scope.morenProducts2 = res.data.list;
+    		$scope.changePro2 = 	$scope.morenProducts2;
     		
     	});
     	$http.get('json/home/4.json').success(function(res){
     		
     		$scope.morenProducts3 = res.data.list;
-    		console.log($scope.morenProducts3);
-    		console.log($scope.morenProducts3[1].show.img);
-    		
+//  		console.log($scope.morenProducts3);
+//  		console.log($scope.morenProducts3[1].show.img);
+    			$scope.changePro3 =$scope.morenProducts3;
     		
     		
     	});
@@ -49,7 +50,7 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
     	});
     	$http.get('json/home/hot2.json').success(function(res){
     		console.log(res);
-    		$scope.morenProducts4 = res.data.list;
+    		$scope.morenProducts5 = res.data.list;
     		 
     		 
 	    	 $('#main').on('scroll',function(){

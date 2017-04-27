@@ -21,14 +21,14 @@
 	<div class="Home_niuzaik">
 		<div class="niuzaiku_wrap" ng-repeat="item in niuzaiku">
 			<div class="niuzaiku_item_box">
-				<a ng-href="{{item.originUrl}}" title="{{item.title}}" class="niuzai_big"><img ng-src="{{item.image}}" alt="" width="100%"/>
+				<a ng-href="{{item.originUrl}}" title="{{item.title}}" class="niuzai_big"><img lazy-src="{{item.image}}" alt="" width="100%"/>
 					<p class="f_title">{{item.title}}</p>
 					<p class="small_tit">{{item.subtitle}}</p>
 				</a>
 				
 				<div class="niuzaiku_item_detail">
 					<a href="" ng-repeat="item1 in item.goodsList">
-						<figure><img ng-src="{{item1.image}}" alt="" class="goods_item_img" width="100%"/>
+						<figure><img lazy-src="{{item1.image}}" alt="" class="goods_item_img" width="100%"/>
 						
 						</figure>
 						<figcaption>
@@ -50,7 +50,7 @@
 				
 				<div class="niuzaiku_item_detail">
 					<a href="" ng-repeat="item1 in item.goodsList">
-						<figure><img ng-src="{{item1.image}}" alt="" class="goods_item_img" width="100%"/>
+						<figure><img lazy-src="{{item1.image}}" alt="" class="goods_item_img" width="100%"/>
 						
 						</figure>
 						<figcaption>
@@ -97,7 +97,7 @@
 					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
 				
-				<img lazy-src="{{item.show.img}}" alt="" class="big_img_show"/>
+				<img src="{{item.show.img}}" alt="" class="big_img_show"/>
 			</div>
 			<p class="home_module_tit">{{item.title}}</p>
 			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav
@@ -113,12 +113,12 @@
 				<div class="img_tags" ng-if="item.leftbottom_taglist" ng-repeat="tags in item.leftbottom_taglist">
 					<img lazy-src="{{tags}}" alt="" class="img_tag" />
 				</div>
-				<div ng-repeat="img in images">
-					<img lazy-src="{{img}}" alt="" class="big_img_show"/>
-				</div>
+				
+				<img src="{{item.show.img}}" alt="" class="big_img_show"/>
 			</div>
 			<p class="home_module_tit">{{item.title}}</p>
-			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav}}</span></div>
+			<div class="price_infos"><span class="price_info">{{item.price}}</span><span class="fav_num"><em class="no_collect_icon"></em>{{item.cfav
+}}</span></div>
 		</div>
 	</div>
 	<a href="" class="J_toTop" ng-click="gotoTop()"></a>

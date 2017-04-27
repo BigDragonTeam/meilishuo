@@ -16,9 +16,9 @@ angular.module('homeSub1Module',[])
 		
 	});
 	$http.get('json/home/homeSub/homeSub1.json').success(function(res){
-		console.log(res);
-		$scope.singelGoods = res.data['45493'];
-		$scope.singelGoods2 = res.data['45487'];
+		console.log(res.data['45493'].list);
+		$scope.singelGoods = res.data['45493'].list;
+		$scope.singelGoods2 = res.data['45487'].list;
 		
 	});
 	

@@ -35,7 +35,7 @@ angular.module('homeSub0Module',[])
 				{
 					$('.a3').addClass('sub0_act').siblings().removeClass('sub0_act');
 				}
-				else if($('#main').scrollTop()<1100)
+				else if($('#main').scrollTop()<11000)
 				{
 					$('.a4').addClass('sub0_act').siblings().removeClass('sub0_act');
 				}
