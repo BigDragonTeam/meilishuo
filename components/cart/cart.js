@@ -9,4 +9,11 @@ angular.module('cartModule',[])
             })
     })
     .controller('cartCtrl',['$scope',function($scope){
+        $scope.arr = JSON.parse(localStorage.getItem('carGoods1'));
+        if($scope.arr.length>0){
+            $scope.noEmpty=false;
+        }else{
+            $scope.noEmpty=true;
+        }
+        console.log($scope.arr);
     }]);

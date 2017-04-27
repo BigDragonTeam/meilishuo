@@ -2,7 +2,7 @@ var app = angular.module('mls', ["ui.router", "me-lazyload", 'angularCSS', 'home
 app.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
 })
-    .factory('factory_getValue', function () {
+    .factory('factory_getValue', ['$window',function ($window) {
         var myData =[] ;
 
         function _getter(i) {
@@ -17,7 +17,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             getter: _getter,
             setter: _setter
         };
-    })
+    }])
     .controller("tabCtrl", ["$rootScope",'factory_getValue', function ($rootScope,factory_getValue) {
         $rootScope.changeColor1 = function () {
             $rootScope.isClassName1 = true;

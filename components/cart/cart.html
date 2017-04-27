@@ -5,12 +5,15 @@
         <div id="cart_header_home"><a ui-sref="home" href="" ng-click="changeColor1()">首页</a></div>
     </div>
     <div id="cart_main">
-        <div id="cart_main_empty">
-            <div id="">
+        <div id="cart_main_empty" ng-show="noEmpty">
+            <div>
                 <p>您的购物车还空着呢</p>
                 <p>美物这么多，快去看看吧~</p>
             </div>
             <div><a ui-sref="home" href="">去逛逛</a></div>
         </div>
+        <ul id="cart_goodsList">
+            <li></li>
+        </ul>
     </div>
 </div>
