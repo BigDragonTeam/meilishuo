@@ -16,4 +16,12 @@ angular.module('cartModule',[])
             $scope.noEmpty=true;
         }
         console.log($scope.arr);
+//       console.log($scope.arr[0][0]);
+		$scope.num = 1;
+		$scope.less = function(){
+			$scope.num--;
+		}
+		$scope.add = function(){
+			$scope.num++;
+		}
     }]);

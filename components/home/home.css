@@ -10,7 +10,14 @@
 	    /*height:100%;*/
 }
 #home img{
+	/*width:100%;*/
 	display:block;
+}
+.slide_banner{
+	height:100%;
+}
+.swiper-slide{
+	height:100%;
 }
 #home header{
 	background:white;

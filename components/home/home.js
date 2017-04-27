@@ -8,6 +8,18 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
                 css:'components/home/home.css'
             })
     })
+    
+	.service('swiper',['$timeout',function($timeout){
+		$timeout(function(){
+			var mySwiper = new Swiper ('.swiper-container', {
+			    loop: true,
+			    autoplay:2000,
+			    // 如果需要分页器
+			    pagination: '.swiper-pagination',
+			  }) 
+		},10);
+	}])
+
     .controller('homeCtrl',['$scope','$http',"$location","$anchorScroll",function($scope,$http,$location,$anchorScroll){
     	
     	$scope.isShow = 1;
@@ -28,15 +40,17 @@ angular.module('homeModule',['homeSub4Module','homeSub0Module','me-lazyload'])
 	    
     	
     	$http.get('json/home/1.json').success(function(res){
-    		console.log(res);
+    		console.log('arr1',res);
     		$scope.hotKeys = res.data['5868'].list;
     		$scope.homeBanner= res.data['5956'].list[0];
+//  		$scope.homeBanner= res.data['5956'].list;
     		$scope.boxSlide = res.data['898989'].list;
 	    	
     	});
     	$http.get('json/home/niuzaiku.json').success(function(res){
     		
     		$scope.niuzaiku = res.data;
+    		console.log('niuzai',$scope.niuzaiku);
     	});
     	//默认
     	$http.get('json/home/2.json').success(function(res){

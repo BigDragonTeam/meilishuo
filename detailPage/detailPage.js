@@ -16,9 +16,15 @@ angular.module('detailModule',[])
         $scope.detailsale= factory_getValue.getter(3);
         $scope.detailcfav= factory_getValue.getter(4);
         $('.tab').empty();
-
+		 
+		
         $scope.addToCar = function(a,b,c) {
-            var obj1=[a,b,c];
+            var obj1={
+            	'img':a,
+            	'title':b,
+            	'price':c
+            };
+            console.log('obj1',obj1);
             var local = localStorage.getItem('carGoods1');
             if(local) {
                 var carArr1 = JSON.parse(local);
@@ -34,10 +40,12 @@ angular.module('detailModule',[])
                     carArr1.push(obj1)
                 }
                 localStorage.setItem('carGoods1', JSON.stringify(carArr1));
+                console.log('json',JSON.stringify(carArr1));
             } else {
                 obj1.num = 1;
                 var carArr = [obj1];
                 localStorage.setItem('carGoods1', JSON.stringify(carArr));
+                 console.log('json',JSON.stringify(carArr));
             }
         }
     }]);
