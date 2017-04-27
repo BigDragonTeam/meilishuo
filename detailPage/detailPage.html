@@ -2,7 +2,12 @@
     <img id="detail_img" src="{{detailimg}}"/>
     <p class="detail_title">{{detailtitle}}</p>
     <p id="detail_price">{{detailprice}}</p>
-</div> 
+	<p id="detail_list">
+		<span>销售{{detailsale}}</span>
+		<span>收藏{{detailcfav}}人</span>
+		<span>默认快递</span>
+	</p>
+</div>
 
 	<div id="deta_tab" ng-controller="tabCtrl">
 	     <div class="kefu">
@@ -18,7 +23,7 @@
 	     	<span class="text">收藏</span>
 	     </div>
 	      <div class="addSome">
-	     	<span class="deta_buy_car">加入购物车</span>
+	     	<span class="deta_buy_car"  ng-click="addToCar()">加入购物车</span>
 	     	<span class="deta_buy_now">购买</span>
 	     </div>
 	     

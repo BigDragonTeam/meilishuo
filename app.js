@@ -29,13 +29,12 @@ var app = angular.module('mls',["ui.router","me-lazyload",'angularCSS','homeModu
         };
         $rootScope.changeColor1();
 
-        $rootScope.toDetail=function (img1,title1,price1) {
-            console.log(img1);
-            console.log(title1);
-            console.log(price1);
+        $rootScope.toDetail=function (img1,title1,price1,sale1,cfav1) {
             $rootScope.detailimg=img1;
             $rootScope.detailtitle=title1;
             $rootScope.detailprice=price1;
+            $rootScope.detailsale=sale1;
+            $rootScope.detailcfav=cfav1;
         }
     }]);
 	 

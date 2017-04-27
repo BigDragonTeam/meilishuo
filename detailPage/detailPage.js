@@ -10,4 +10,7 @@ angular.module('detailModule',[])
     })
     .controller('detailCtrl',['$scope',function($scope){
 		$('.tab').empty();
+        $scope.addToCar=function () {
+            
+        }
     }]);

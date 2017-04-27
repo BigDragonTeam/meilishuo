@@ -25,18 +25,33 @@
     font-size: .35rem;
     white-space: nowrap;
     position: absolute;
-    bottom:-5%;
+    bottom:-2%;
     left:0;
     line-height: 1.1rem;
     text-align: center;
     color: #f36;
     background: white;
 }
+
+#detail_list{
+    width:100%;
+    position: absolute;
+    bottom: -5%;
+    left:0;
+    font-size: .3rem;
+    padding-left: 14%;
+}
+#detail_list>span{
+    margin: 0 7%;
+    color: #999;
+}
+
+
 #deta_tab>div{
 	float:left;
 	height:100%;
 	text-align:center;
-	 
+    color: #999;
 }
 #deta_tab .icon{
 	width:.44rem;
@@ -62,7 +77,7 @@
 #deta_tab{
 	position: fixed;
     bottom: 0;
-    
+    background: white;
     z-index: 6;
     width: 100%;
     height:10%;
@@ -86,7 +101,7 @@
 	width:1.88rem;
 	display:inline-block;
 	background:#ffe817;
-	
+    color: #333;
 }
 .deta_buy_now{
 	background:#ff3366;
@@ -95,7 +110,6 @@
 }
 .addSome{
 	font-size:0;
-	
 }
 #deta_tab .addSome span{
 	display:inline-block;
