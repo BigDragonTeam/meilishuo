@@ -1,6 +1,6 @@
 <ul class="typedress_type">
-    <li ng-click="typecoats(typecoats1)">流行</li>
-    <li ng-click="typecoats(typecoats2)">热销</li>
+    <li ng-click="typecoats(typecoats1)" ng-class="{true:'istypetrue',false:'istypefalse'}[istorf]">流行</li>
+    <li ng-click="typecoatsclick(typecoats2)" ng-class="{true:'istypetrue',false:'istypefalse'}[isred]">热销</li>
     <li ng-click="typetoggle()">价格</li>
 </ul>
 <div class=" typehideandshow" ng-hide="typehide">

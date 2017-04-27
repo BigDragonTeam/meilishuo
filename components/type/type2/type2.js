@@ -9,11 +9,15 @@ angular.module('type2Module', [])
             })
     })
     .controller('type2Ctrl', ['$scope', '$http', function ($scope, $http) {
+        $scope.istorf=true;
         $http.get('json/classify/typepants/1.json').success(function (dressres) {
             $scope.typepants_1 = dressres.data.list;
             $scope.typepants = $scope.typepants_1;
             $scope.typepantspop = function (k) {
                 $scope.typepants = k;
+                $scope.istorf=true;
+                $scope.isred=false;
+                $scope.isblue=false;
 
             }
         });
@@ -21,6 +25,9 @@ angular.module('type2Module', [])
             $scope.typepants_2 = dressres.data.list;
             $scope.typepantshot = function (k) {
                 $scope.typepants = k;
+                $scope.istorf=false;
+                $scope.isred=true;
+                $scope.isblue=false;
 
             }
         });
@@ -28,6 +35,9 @@ angular.module('type2Module', [])
             $scope.typepants_3 = dressres.data.list;
             $scope.typepantsnew = function (k) {
                 $scope.typepants = k;
+                $scope.istorf=false;
+                $scope.isred=false;
+                $scope.isblue=true;
 
             }
         });

@@ -9,11 +9,16 @@ angular.module('type3Module',[])
             })
 })
     .controller('type3Ctrl', ['$scope', '$http', function ($scope, $http) {
+        $scope.istorf=true;
         $http.get('json/classify/typebag/1.json').success(function (dressres) {
             $scope.typebag_1=dressres.data.list;
             $scope.typebag=$scope.typebag_1;
             $scope.typebagpop=function (i) {
                 $scope.typebag=i
+                $scope.istorf=true;
+                $scope.isred=false;
+                $scope.isblue=false;
+
             }
 
         });
@@ -21,12 +26,18 @@ angular.module('type3Module',[])
             $scope.typebag_2=dressres.data.list;
             $scope.typebaghot=function (i) {
                 $scope.typebag=i
+                $scope.istorf=false;
+                $scope.isred=true;
+                $scope.isblue=false;
             }
         });
         $http.get('json/classify/typebag/3.json').success(function (dressres) {
             $scope.typebag_3 = dressres.data.list;
             $scope.typebagnew = function (i) {
                 $scope.typebag = i;
+                $scope.istorf=false;
+                $scope.isred=false;
+                $scope.isblue=true;
 
             }
         });

@@ -15,16 +15,25 @@ angular.module('typecoat2Module',[])
         $http.get('json/classify/typecoat/3.json').success(function (typetrousersres) {
             $scope.typetrouser1=typetrousersres.data.list;
             $scope.typetrouserscont=$scope.typetrouser1;
+
             $scope.typetrousersclick=function (m) {
                 $scope.typetrouserscont=m;
+                $scope.istorf=true;
+                $scope.isred=false;
                 $scope.typehide1=true;
-
 
             }
 
         });
         $http.get('json/classify/typecoat/4.json').success(function (typetrousersres) {
+
             $scope.typetrouser2=typetrousersres.data.list;
+            $scope.typetrousersclick1=function (m) {
+                $scope.typetrouserscont=m;
+                $scope.isred=true;
+                $scope.istorf=false
+                $scope.typehide1=true;
+            }
             
 
         })

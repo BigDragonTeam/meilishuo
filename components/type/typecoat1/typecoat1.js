@@ -15,13 +15,23 @@ angular.module('typecoat1Module',[])
         $http.get('json/classify/typecoat/1.json').success(function (typecoatres) {
             $scope.typecoats1=typecoatres.data.list;
             $scope.typecoatcont=$scope.typecoats1;
+
             $scope.typecoats=function (k) {
                 $scope.typecoatcont=k;
+                $scope.istorf=true;
+                $scope.isred=false;
                 $scope.typehide=true;
             }
         });
         $http.get('json/classify/typecoat/2.json').success(function (typecoatres) {
             $scope.typecoats2=typecoatres.data.list;
+            $scope.typecoatsclick=function (k) {
+                $scope.typecoatcont=k;
+                $scope.isred=true;
+                $scope.istorf=false;
+                $scope.typehide=true;
+
+            }
 
         });
         $scope.typehide=true;

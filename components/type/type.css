@@ -117,4 +117,11 @@
     float: left;
 
 }
+.istypetrue{
+    color:#FF3366;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    display:inline-block;
+}
+
 

@@ -8,9 +8,9 @@
     <img src="http://s16.mogucdn.com/p2/160919/upload_20i9ji8fkkdjj0b24761i6hjd462h_750x99.png_750x999.v1c7E.70.webp">
     <div class="typedress_type">
         <ul class="typedress_type1">
-            <li ng-click="typepantspop(typepants_1)">流行</li>
-            <li ng-click="typepantshot(typepants_2)">热销</li>
-            <li ng-click="typepantsnew(typepants_3)">上新</li>
+            <li ng-click="typepantspop(typepants_1)" ng-class="{true:'istypetrue',false:'istypefalse'}[istorf]">流行</li>
+            <li ng-click="typepantshot(typepants_2)" ng-class="{true:'istypetrue',false:'istypefalse'}[isred]">热销</li>
+            <li ng-click="typepantsnew(typepants_3)" ng-class="{true:'istypetrue',false:'istypefalse'}[isblue]">上新</li>
         </ul>
 
     </div>
