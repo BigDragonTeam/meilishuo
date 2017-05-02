@@ -17,11 +17,27 @@ angular.module('cartModule',[])
         }
         console.log($scope.arr);
 //       console.log($scope.arr[0][0]);
-		$scope.num = 1;
-		$scope.less = function(){
-			$scope.num--;
+		
+		$scope.less = function(item){
+			
+			item.num--;
+			if(item.num <=0)
+			{	
+				console.log(item);
+				item.num =0;
+				 $scope.arr.pop(item);
+			}
 		}
-		$scope.add = function(){
-			$scope.num++;
+		$scope.add = function(item){
+			item.num++;
 		}
+		$scope.delete = function (item){
+			 $scope.arr.pop(item);
+			console.log(item);
+		}
+//		$('.delete').on('click',function(){
+//			console.log($(this));
+//			console.log($(this).parent());
+//			$(this).parent().parent().empty();
+//		})
     }]);

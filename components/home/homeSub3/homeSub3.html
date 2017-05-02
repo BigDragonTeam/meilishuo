@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
-</html>
+<div class="sub3_wrap">
+	<div class='six_nine' ng-repeat='item in sub3'>
+		<div class="item_box">
+			<a href="" class="item_box_wrap" ng-repeat="item1 in item.goodsList">
+				<div class="item_box">
+					<img src="{{item1.image}}" alt="" />
+					<span class="sub3_price">￥{{item1.price}}</span>
+				</div>
+			</a>
+			
+		</div>
+	</div>
+</div>

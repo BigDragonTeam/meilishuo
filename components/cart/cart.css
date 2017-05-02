@@ -75,22 +75,31 @@
 	font-size:.24rem;
 	font-weight:normal;
 	width:3rem;
-	overflow:hidden;
-	/*white-space: nowrap;*/
-	/*white-space:nowrap;*/
-	text-overflow:ellipsis;	
+	
+	padding-bottom:.4rem;
+	
+}
+.info_car{
+	padding:.1rem 0;
+}
+.info_car span{
+	display:inline-block;
+	width:.4rem;
 }
 .car_tit h5{
-	text-overflow:ellipsis;
+	overflow:hidden;
+	text-overflow:ellipsis;	
+	white-space:nowrap;
+	width:3rem;
 }
-.car_tit>div{
+.car_tit .allNum{
 	display:inline-block;
 	border:1px solid #99999F;
 }
 .car_tit span{
 	font-size:.4rem;
 	display:inline-block;
-	padding:.06rem .2rem;
+	padding:.05rem .2rem;
 	color:#99999F;
 }
 .car_tit .less{
@@ -110,6 +119,8 @@ table tr{
 }
 table tr td:first-child{
 	text-align:center;
+	width:1rem;
+	
 }
 table tr input{
 	background:#007AFF;
@@ -118,4 +129,16 @@ table tr input{
 	width:.4rem;
 	height:.4rem;
 	
+}
+.car_price{
+	vertical-align: top;
+	padding:.8rem 0 0 1rem;
+}
+.img_tr img{
+	width:80%; 
+}
+.delete{
+	height:.4rem;
+	margin-top:.6rem;
+	background:url(img/1.jpg) no-repeat;
 }

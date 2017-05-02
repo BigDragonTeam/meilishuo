@@ -8,6 +8,10 @@ angular.module('homeSub3Module',[])
             css:['components/home/home.css','components/home/homeSub3/homeSub3.css']
         })
 })
-.controller('homeSub3Ctrl',['$scope',function($scope){
-	
+.controller('homeSub3Ctrl',['$scope','$http',function($scope,$http){
+	$http.get('json/home/homeSub/homeSub3.json').success(function(res){
+		
+		$scope.sub3=res.data;
+		console.log('sub',$scope.sub3);
+	})
 }])

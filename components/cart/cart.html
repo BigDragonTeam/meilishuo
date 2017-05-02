@@ -13,14 +13,17 @@
             <div><a ui-sref="home" href="">去逛逛</a></div>
         </div>
       
-        <table id="cart_goodsList" width="100%">
+        <table id="cart_goodsList" width="100%"  cellspacing="0" cellpadding="0">
         	<tr ng-repeat="item in arr">	
         		<td><input type="checkbox" /></td>
         		<td class="img_tr" width="20%"><img src="{{item.img}}" alt="" width="100%"/></td>
         		<td class="car_tit"><h5>{{item.title}}</h5>
-        			<div><span class="less" ng-click="less()">-</span><span class="num">{{num}}</span><span class="add" ng-click="add()">+</span></div>
+        			<div class="info_car">颜色：<span></span>尺码：<span></span></div>
+        			<div class="allNum"><span class="less" ng-click="less(item)">-</span><span class="num">{{item.num}}</span><span class="add" ng-click="add(item)">+</span></div>
         		</td>
-        		<td class="car_price">{{item.price*num}}</td>
+        		<td class="car_price">￥{{item.price*item.num}}
+        			<div class="delete" ng-click="delete(item)"></div>
+        		</td>
         	</tr>
         </table>
     </div>

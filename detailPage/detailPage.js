@@ -19,10 +19,12 @@ angular.module('detailModule',[])
 		 
 		
         $scope.addToCar = function(a,b,c) {
+        	var str = c;
+        	var newPrice =  str.substring(1);
             var obj1={
             	'img':a,
             	'title':b,
-            	'price':c
+            	'price':newPrice
             };
             console.log('obj1',obj1);
             var local = localStorage.getItem('carGoods1');

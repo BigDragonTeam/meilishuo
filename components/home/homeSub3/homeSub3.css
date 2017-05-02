@@ -1,0 +1,32 @@
+.six_nine a{
+	position:absolute;
+}
+.item_box{
+	position:relative;
+	height:7.2rem;
+	margin:.1rem 0 .1rem 0;
+}
+.six_nine img{
+	width:100%;
+}
+.sub3_price{
+	position:absolute;
+	bottom:.2rem;
+	right:0;
+	font-size:.3rem;
+	color:#fff;
+	padding:.04rem .1rem;
+	background:rgba(0,0,0,0.4);
+}
+.sub3_wrap{
+	    padding: .2rem .2rem 0;
+}
+.item_box a:nth-child(1){
+	left:0rem;top:0rem;width:4.72rem;height:7.1rem;
+}
+.item_box a:nth-child(2){
+	left:4.76rem;top:0rem;width:2.34rem;height:3.53rem;
+}
+.item_box a:nth-child(3){
+	left:4.76rem;top:3.57rem;width:2.34rem;height:3.53rem;
+}
